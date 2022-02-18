@@ -1,151 +1,176 @@
 ﻿<!DOCTYPE html>
 <html lang="en">
+
 <head>
-    <title>CSS Template</title>
+    <title>Technological Reviews</title>
+    <link rel="icon" type="Content/gorillapad-6.jpg" href="Content/gorillapad-6.jpg">
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-
-
-    <link href="C:\Users\konst\Documents\NYC 2021-2022\Research Project Website\Research Project\Content\StyleSheet2.css" rel="stylesheet" />
+    <script src="../Javascript/General.js"></script>
+    <script src="../Javascript/Accessibility.js"></script>
+    <link href="../CSS/ResearchProject.css" rel="stylesheet" />
 </head>
+
+
+
 <body>
+    <div class="topnav" id="myTopnav">
 
-    <script src="https://cdn.userway.org/widgetapp/2021-12-11/widget_app_1639252453165.js" async="" id="a11yWidgetSrc"></script>
+        <a href="../index.html">Home</a>
+        <a href="reviews.html">Reviews </a>
+        <a href="about.html" >About </a>
+        <a href="Webpages/contact.html"class="active">Contact</a>
+
+        <div class="dropdown">
+            <button onclick="myFunction()" class="dropbtn">Accessibility</button>
+            <div id="myDropdown" class="dropdown-content">
+                <input type="text" placeholder="Search.." id="myInput" onkeyup="filterFunction()">
+
+                <a>
+                    Select Background Color:
+                    <button type="button" onclick="myFunction5()">red</button>
+                    <button type="button" onclick="myFunction6()">eye friendly</button>
+                    <button type="button" onclick="myFunction7()">grey</button>
+                    <button type="button" onclick="myFunction12()">green</button>
+
+                </a>
+                <a>
+                    Select Font Size:
+                    <button type="button" onclick="myFunction4()">Smaller </button>
+                    <button type="button" onclick="myFunction2()">Normal </button>
+                    <button type="button" onclick="myFunction3()">Large </button>
+                </a>
+                <a>
+                    Select Custom Font Size:
+                    <select onchange="myFunction(this);" size="12">
+                        <option>xx-small</option>
+                        <option>x-small</option>
+                        <option>small</option>
+                        <option>medium</option>
+                        <option>large</option>
+                        <option>x-large</option>
+                        <option>xx-large</option>
+                        <option>100%</option>
+                        <option>250%</option>
+                        <option>2cm</option>
+                        <option>100px</option>
+
+                    </select>
+                </a>
 
 
-    <header>
-        <h2>
-            Welcome to :"Technological Reviews
-        </h2>
-    </header>
+                <a>
+                    Select Font Family:
+
+
+                    <select onchange="myFunction10(this);" size="13">
+                        <option>Georgia</option>
+                        <option>Palatino Linotype</option>
+                        <option>Book Antiqua</option>
+                        <option>Times New Roman</option>
+                        <option>Arial</option>
+                        <option>Helvetica</option>
+                        <option>Arial Black</option>
+                        <option>Impact</option>
+                        <option>Lucida Sans Unicode</option>
+                        <option>Tahoma</option>
+                        <option>Verdana</option>
+                        <option>Courier New</option>
+                        <option>Lucida Console</option>
+                    </select>
+                </a>
 
 
 
-    <section>
-        <div class="grid-container">
-            <div class="grid-item">
-                <nav>
-                    <div class="sidenav">
-                        <a href="file:///C:/Users/konst/Documents/NYC%202021-2022/Research%20Project%20Website/Research%20Project/index.html#home" active>home</a>
-                        <a href="file:///C:/Users/konst/source/repos/Research%20Project/about.html">about</a>
-                        <a href="#new products">new products</a>
-                        <a href="#reviews">reviews</a>
-                    </div>
-                </nav>
-                <iframe src="http://feeds.bbci.co.uk/news/technology/rss.xml" height="800" width="214"> </iframe>
-
-                <article>
-                    <h1>Breaking News</h1>
-                    <img src="Content/gorillapad-6.jpg" width=150 />
-
-                    <h1>London</h1>
-                    <p>London is the capital city of England. It is the most populous city in the  United Kingdom, with a metropolitan area of over 13 million inhabitants.</p>
-                    <p>Standing on the River Thames, London has been a major settlement for two millennia, its history going back to its founding by the Romans, who named it Londinium.</p>
-                    <p>London is the capital city of England. It is the most populous city in the  United Kingdom, with a metropolitan area of over 13 million inhabitants.</p>
-                    <p>Standing on the River Thames, London has been a major settlement for two millennia, its history going back to its founding by the Romans, who named it Londinium.</p>
-                    <p>London is the capital city of England. It is the most populous city in the  United Kingdom, with a metropolitan area of over 13 million inhabitants.</p>
-                    <p>Standing on the River Thames, London has been a major settlement for two millennia, its history going back to its founding by the Romans, who named it Londinium.</p>
 
 
-                </article>
+
+                </button>
+
+
+
+
+
+
+
             </div>
-            <div class="grid-item">
+        </div>
 
-                <article>
-                    <h1>Breaking News</h1>
+        <a href="javascript:void(0);" class="icon" onclick="myFunction14()">&#9776;</a>
+
+    </div>
+    <div id="ac-wrapper" style='display:none'>
+        <div id="popup">
+            <center>
+                <h1>WARNING!</h1>
+                <h2> When browsing via tablet in landscape it is adviced to refresh the website for better browsing experience</h2>
+                <h2> When browsing via mobile phone it is adviced to leave the text in list view for better browsing experience </h2>
+
+                <h2> You can select text with your computer mouse or touch for touchscreen devices to activate the text to speech functionality</h2>
+                <h2> To stop text to speach just press with your computer mouse or touch, somewhere else on the screen area</h2>
+
+                <input type="submit" name="submit" value="Understand" onClick="PopUp('hide')" />
+            </center>
+        </div>
+    </div>
+
+    <div class="grid-container" id="demo">
+        <marquee direction="left">
+            WARNING! IF BROWSING VIA TABLET IT IS ADVICED TO REFRESH THE PAGE FOR LANDSCAPE BROWSING FOR BEST VIEWING EXPERIENCE / SELECT TEXT WITH MOUSE OR TOUCH TO ACTIVATE THE TEXT TO SPEACH
+        </marquee>
 
 
-                    <h1>London</h1>
-                    <p>London is the capital city of England. It is the most populous city in the  United Kingdom, with a metropolitan area of over 13 million inhabitants.</p>
-                    <p>Standing on the River Thames, London has been a major settlement for two millennia, its history going back to its founding by the Romans, who named it Londinium.</p>
-                    <p>London is the capital city of England. It is the most populous city in the  United Kingdom, with a metropolitan area of over 13 million inhabitants.</p>
-                    <p>Standing on the River Thames, London has been a major settlement for two millennia, its history going back to its founding by the Romans, who named it Londinium.</p>
-                    <p>London is the capital city of England. It is the most populous city in the  United Kingdom, with a metropolitan area of over 13 million inhabitants.</p>
-                    <p>Standing on the River Thames, London has been a major settlement for two millennia, its history going back to its founding by the Romans, who named it Londinium.</p>
 
 
-                </article>
-                <aside>
-                    <h1>London</h1>
-                    <p>London is the capital city of England. It is the most populous city in the  United Kingdom, with a metropolitan area of over 13 million inhabitants.</p>
-                    <p>Standing on the River Thames, London has been a major settlement for two millennia, its history going back to its founding by the Romans, who named it Londinium.</p>
-                    <p>London is the capital city of England. It is the most populous city in the  United Kingdom, with a metropolitan area of over 13 million inhabitants.</p>
-                    <p>Standing on the River Thames, London has been a major settlement for two millennia, its history going back to its founding by the Romans, who named it Londinium.</p>
-                    <p>London is the capital city of England. It is the most populous city in the  United Kingdom, with a metropolitan area of over 13 million inhabitants.</p>
-                    <p>Standing on the River Thames, London has been a major settlement for two millennia, its history going back to its founding by the Romans, who named it Londinium.</p>
-                </aside>
+        <div class="row">
+            <div class="leftcolumn">
+                <div tabindex="1" class="card">
+
+                    <h1>TECHNOLOCICAL REVIEWS</h1>
+                    <p>Loreipsum Loreipsum  Loreipsum Loreipsum LoreipsumLoreipsum oreipsum Loreipsum  Loreipsum Loreipsum LoreipsumLoreipsumoreipsum Loreipsum  Loreipsum Loreipsum LoreipsumLoreipsum</p>
+                    <p>
+                        <h2>ACESSIBILITY STATEMENT </h2>
+                        "Technological Reviews" is committed to making its website usable and accessible to everyone, regardless of technology or ability. We aim to comply with all applicable standards, including the Web Content Accessibility Guidelines 2.1 Level AA. If you experience any difficulty in accessing any part of this website or have any questions or concerns regarding its accessibility, please feel free to email us at info@teremana.com. We will work with you to provide the information you need through an alternate communication method or one that is accessible for you.
+                    </p>
+                    <h2>HELP PAGE:</h2>
+                    <p>Loreipsum Loreipsum  Loreipsum Loreipsum LoreipsumLoreipsum</p>
+
+                    <h2>WHAT'S ON:</h2>
+                    <p>Loreipsum Loreipsum  Loreipsum Loreipsum LoreipsumLoreipsum</p>
+
+                    <h2> WHO'S ON:</h2>
+                    <p>Loreipsum Loreipsum  Loreipsum Loreipsum LoreipsumLoreipsum</p>
+
+
+                    <h2>
+                        STUDIO TOUR:
+                    </h2>
+                    <p>Loreipsum Loreipsum  Loreipsum Loreipsum LoreipsumLoreipsum</p>
+
+
+
+
+                    <button onclick="topFunction()" id="myBtn" title="Go to top">Top</button>
+                </div>
             </div>
-            <div class="grid-item">
-                <article>
-                    <h1>London</h1>
-
-                    <p>London is the capital city of England. It is the most populous city in the  United Kingdom, with a metropolitan area of over 13 million inhabitants.</p>
-                    <p>Standing on the River Thames, London has been a major settlement for two millennia, its history going back to its founding by the Romans, who named it Londinium.</p>
-
-                </article>
-                <aside>
-                    <h1>London</h1>
-                    <p>London is the capital city of England. It is the most populous city in the  United Kingdom, with a metropolitan area of over 13 million inhabitants.</p>
-                    <p>Standing on the River Thames, London has been a major settlement for two millennia, its history going back to its founding by the Romans, who named it Londinium.</p>
-                    <p>London is the capital city of England. It is the most populous city in the  United Kingdom, with a metropolitan area of over 13 million inhabitants.</p>
-                    <p>Standing on the River Thames, London has been a major settlement for two millennia, its history going back to its founding by the Romans, who named it Londinium.</p>
-                    <p>London is the capital city of England. It is the most populous city in the  United Kingdom, with a metropolitan area of over 13 million inhabitants.</p>
-                    <p>Standing on the River Thames, London has been a major settlement for two millennia, its history going back to its founding by the Romans, who named it Londinium.</p>
-                </aside>
-                <aside>
-                    <h1>London</h1>
-                    <p>London is the capital city of England. It is the most populous city in the  United Kingdom, with a metropolitan area of over 13 million inhabitants.</p>
-                    <p>Standing on the River Thames, London has been a major settlement for two millennia, its history going back to its founding by the Romans, who named it Londinium.</p>
-                    <p>London is the capital city of England. It is the most populous city in the  United Kingdom, with a metropolitan area of over 13 million inhabitants.</p>
-                    <p>Standing on the River Thames, London has been a major settlement for two millennia, its history going back to its founding by the Romans, who named it Londinium.</p>
-                    <p>London is the capital city of England. It is the most populous city in the  United Kingdom, with a metropolitan area of over 13 million inhabitants.</p>
-                    <p>Standing on the River Thames, London has been a major settlement for two millennia, its history going back to its founding by the Romans, who named it Londinium.</p>
-                </aside>
-            </div>
-            <div class="grid-item">
+        </div>
+        <div class="footer">
 
 
-                <h1>London</h1>
-                <iframe src="http://rss.cnn.com/rss/edition_technology.rss" height="500" width="800" style="float:right">
-                </iframe>
-                <iframe src="https://www.computerworld.com/uk/" height="500" width="800" style="float:right"></iframe>
-                <aside>
-                    <h1>London</h1>
 
-                    <p>London is the capital city of England. It is the most populous city in the  United Kingdom, with a metropolitan area of over 13 million inhabitants.</p>
-                    <p>Standing on the River Thames, London has been a major settlement for two millennia, its history going back to its founding by the Romans, who named it Londinium.</p>
-                    <p>London is the capital city of England. It is the most populous city in the  United Kingdom, with a metropolitan area of over 13 million inhabitants.</p>
-                    <p>Standing on the River Thames, London has been a major settlement for two millennia, its history going back to its founding by the Romans, who named it Londinium.</p>
-                </aside>
-            </div>
-
-
+            <h1> Bolton University New York College</h1>
+            <h2>Copyright 2022 "Technological Reviews"  </h2>
+            <h3>Created by konstantinos Moraitis</h3>
         </div>
 
 
+        <script src="https://code.responsivevoice.org/responsivevoice.js?key=lL2tzw3J"></script>
 
 
-    </section>
-    <footer>
-        <p>
-            © 2022 TECHNOLOGICAL REVIEWS LP, LLLP.
-            A Time Warner Company. All Rights Reserved.
-            Terms under which this service is provided to you.
-            Read our privacy guidelines. Contact us.
-            external link
-        </p>
-        <p>
-            All external sites will open in a new browser.
-            CNN.com does not endorse external sites.
-        </p>
-
-        <p>
-            Premium content icon 	Denotes premium content.
-            Add RSS headlines.
-        </p>
-        <p>Copyright Konstantinos Moraitis</p>
-    </footer>
 
 </body>
+
 </html>
+
+
 
