@@ -101,4 +101,29 @@ document.getElementsByTagName('div')[0].focus();
             var listValue = selectTag.options[selectTag.selectedIndex].text;
             document.getElementById("demo").style.fontSize = listValue;
         }
-    
+$('a').keyup(function (e) {
+    console.log('keyup called');
+    var code = e.keyCode || e.which;
+    if (code == '9') {
+        responsiveVoice.cancel();
+        responsiveVoice.speak('Link 2 ' + $(':focus').text());
+    }
+});
+$('button').keyup(function (e) {
+    console.log('keyup called');
+    var code = e.keyCode || e.which;
+    if (code == '9') {
+        setTimeout(responsiveVoice.speak($(':focus').text() + ' button'), 1000);
+    }
+});
+$('textarea').keyup(function (e) {
+    console.log('keyup called');
+    var code = e.keyCode || e.which;
+    if (code == '9') {
+        responsiveVoice.cancel();
+        responsiveVoice.speak('Text Input ' + $(':focus').attr('placeholder'));
+    }
+});
+
+
+  
