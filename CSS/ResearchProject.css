@@ -1,33 +1,45 @@
 ﻿
 * {
     box-sizing: border-box;
+}table{
+    border:solid;
+    border-color:black;
 }
+ td{border:solid;
+    font-size:large;
+    color:black;
+    background-color:white;
+ }
 img {
-  float:left;
+ 
     padding:5px;
 }
+.container {
+    position: relative;
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+    .container img {
+        vertical-align: middle;
+    }
+
+    .container .content {
+        position: absolute;
+        bottom: 0;
+        background: rgb(0, 0, 0); /* Fallback color */
+        background: rgba(0, 0, 0, 0.5); /* Black background with 0.5 opacity */
+        color: #f1f1f1;
+        width: 100%;
+        padding: 20px;
+    }
 iframe{
     float:left;
-    width:auto;
+ width:auto;
+ height:auto;
 
 }
-/* Add a card effect for articles */
-.card {
-    color: black;
-    float: left;
-    padding: 5px;
-    margin-bottom: 5px;
-    width: 100%;
-    height: auto;
-}
 
-.leftcolumn {
-    
-    width: 100%;
-    margin:auto;
-    height:auto;
-    padding:5px;
-}
 /* Clear floats after the columns */
 .row:after {
     content: "";
@@ -81,23 +93,8 @@ body {
  
 }
 
-article{
-    padding:5px;
-    width:100%;
-    margin:auto;
-    height:auto;
-    
 
-    
-    
-    
-}
-.tooltip .tooltiptext {
-    width: 120px;
-    top: 100%;
-    left: 50%;
-    margin-left: -60px; /* Use half of the width (120/2 = 60), to center the tooltip */
-}
+
 .responsive {
     max-width: 100%;
     height: auto;
@@ -162,6 +159,7 @@ div.content {
     width:100%;
     overflow: hidden;
     max-width: 100%;
+    height:auto;
 }
 
     /* Style the links inside the navigation bar */
@@ -170,16 +168,26 @@ div.content {
         display: block;
         color:white;
         font-weight:bold;
-        font-size:larger;
+        font-size:large;
         text-align: center;
-        padding: 14px 16px;
+        padding: 12px 14px;
         text-decoration: none;
-        font-size: 17px;
+      
        
         
 
     }
-
+  
+header {
+    background-image: linear-gradient(grey,black,grey);
+    overflow: hidden;
+    max-width: 100%;
+   
+    padding:0px;
+    color:white;
+    text-align:center;
+    text-underline-position:under;
+}
 /* Add an active class to highlight the current page */
 .active {
     background-image: linear-gradient(whitesmoke,lightgrey,white);
@@ -198,16 +206,16 @@ dropdown{
     /* Style the dropdown button to fit inside the topnav */
 .dropdown .dropbtn {
     cursor: pointer;
-    font-size: 16px;
+    font-size: large;
     border: ridge;
     outline: none;
     border-radius: 8px;
     font-weight: bolder;
     color: white;
-    padding: 14px 16px;
-    background-image: linear-gradient(skyblue,blue,white);
+    padding: 9px 11px;
+    background-image: linear-gradient(white,blue,white);
     font-family: inherit;
-    margin: 0;
+    margin: auto;
     float: right;
 }
 
@@ -215,26 +223,35 @@ dropdown{
 .dropdown-content {
     display: none;
     position: initial;
+
+
     background-color: #f9f9f9;
     min-width: 160px;
     box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
     z-index: 1;
-    background-image:linear-gradient(red,darkred,red);
+    background-image:linear-gradient(grey,white,grey);
+    margin:auto;
+    padding:12px;
+    overflow:hidden;
 }
 .dropdown .bropbtn:hover{
     font-weight:bolder;
     font-size:20px;
-    background-image:linear-gradient(white,darkred,white);
+    background-image:linear-gradient(white,grey,white);
+    cursor:pointer;
 }
     /* Style the links inside the dropdown */
-    .dropdown-content a {
-        float: none;
-        color: black;
-        padding: 12px 16px;
-        text-decoration: none;
-        display: block;
-        text-align: left;
-    }
+.dropdown-content a {
+    float: none;
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+    text-align: left;
+    border: ridge;
+    border-color:slategrey;
+   
+}
 .show {
     display: block;
 }
@@ -251,8 +268,8 @@ dropdown{
 
 
 .dropdown-content a:hover {
-    background-image: linear-gradient(white,dodgerblue,white);
-    color: black;
+    background-image: linear-gradient(darkred,red);
+    color: white;
     font-weight:bolder;
     font-size:20px;
 }
@@ -319,9 +336,10 @@ dropdown{
      background-image:linear-gradient(white,darkred,white);
      color:white;
      font-weight:bold;
-     border-radius:6px;
+     border-radius:4px;
      border:ridge;
      border-color:darkred;
+     cursor:pointer;
      
  }
 
@@ -333,6 +351,7 @@ dropdown{
     height: 100%;
     background: rgba(255, 255, 255, .6);
     z-index: 1001;
+    cursor: pointer;
 }
 
 #popup {
@@ -352,4 +371,3 @@ dropdown{
 }
 
 
-<iframe width="560" height="315" src="https://www.youtube.com/embed/VXaathYP7Dw" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen > </iframe >
