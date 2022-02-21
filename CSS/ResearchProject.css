@@ -48,8 +48,8 @@ iframe{
 }
 /* Footer */
 .footer {
-    background-image: linear-gradient(red,darkred);
-    color:white;
+    background-image: linear-gradient(red,black);
+    color: white;
     padding: 20px;
     text-align: center;
     margin-top: 20px;
@@ -66,7 +66,8 @@ iframe{
     }
 }
 .column {
-    float: left;
+   float:left;
+
     width: 50%;
     padding:10px;
     margin:auto;
@@ -84,8 +85,8 @@ iframe{
 body {
     font-family: Arial, Helvetica, sans-serif;
     font-size:14px;
-    background-color: white;
-     max-width:1400px;
+    background-color: whitesmoke;
+     max-width:1600px;
      min-width:auto;
         width:auto;
         margin:auto;
@@ -132,7 +133,11 @@ body {
         background-color: green; /* Add a dark-grey background on hover */
         color:yellow;
     }
-
+.dark-mode {
+    background-color: black;
+    color: white;
+    
+}
 
 marquee {
     background-image: linear-gradient(whitesmoke,white,skyblue);
@@ -155,23 +160,23 @@ div.content {
 
 /* Add a black background color to the top navigation */
 .topnav {
-    background-image: linear-gradient(red,darkred);
-    width:100%;
+    background-image: linear-gradient(white,lightgrey);
+    width: 100%;
     overflow: hidden;
     max-width: 100%;
-    height:auto;
+    height: auto;
 }
 
     /* Style the links inside the navigation bar */
     .topnav a {
         float: left;
         display: block;
-        color:white;
-        font-weight:bold;
-        font-size:large;
+
+    font-size:larger;
+
         text-align: center;
         padding: 12px 14px;
-        text-decoration: none;
+        text-decoration:none;
       
        
         
@@ -190,8 +195,8 @@ header {
 }
 /* Add an active class to highlight the current page */
 .active {
-    background-image: linear-gradient(whitesmoke,lightgrey,white);
-    color: darkred !important;
+    background-image: linear-gradient(red,darkred);
+    color:white !important;
 }
 
 /* Hide the link that should open and close the topnav on small screens */
@@ -213,12 +218,32 @@ dropdown{
     font-weight: bolder;
     color: white;
     padding: 9px 11px;
-    background-image: linear-gradient(white,blue,white);
+    background-image:linear-gradient(skyblue,blue);
+    width:auto;
     font-family: inherit;
     margin: auto;
     float: right;
 }
 
+/* unvisited link */
+a:link {
+    color: red;
+}
+
+/* visited link */
+a:visited {
+    color: #6666EB;
+}
+
+/* mouse over link */
+a:hover {
+    color: hotpink;
+}
+
+/* selected link */
+a:active {
+    color: blue;
+}
 /* Style the dropdown content (hidden by default) */
 .dropdown-content {
     display: none;
@@ -256,20 +281,21 @@ dropdown{
 
 /* Add a dark background on topnav links and the dropdown button on hover */
 .topnav a:hover {
-    background-image: linear-gradient(darkred,black);
+    background-image: linear-gradient(darkred,darkred,black);
     color: white;
     font-weight:bolder;
-    font-size:20px;
+    text-decoration:underline;
+   
     
 
 }
 
 
 .dropdown-content a:hover {
-    background-image: linear-gradient(darkred,red);
+    background-image: linear-gradient(darkred,darkred,red);
     color: white;
     font-weight:bolder;
-    font-size:20px;
+   
 }
 
 /* Show the dropdown menu when the user moves the mouse over the dropdown button */
@@ -282,7 +308,7 @@ dropdown{
 }
 
 /* When the screen is less than 600 pixels wide, hide all links, except for the first one ("Home"). Show the link that contains should open and close the topnav (.icon) */
-@media screen and (max-width: 600px) {
+@media screen and (max-width: 1000px) {
     .topnav a:not(:first-child), .dropdown .dropbtn {
         display: none;
     }
@@ -294,7 +320,7 @@ dropdown{
 }
 
 /* The "responsive" class is added to the topnav with JavaScript when the user clicks on the icon. This class makes the topnav look good on small screens (display the links vertically instead of horizontally) */
-@media screen and (max-width: 600px) {
+@media screen and (max-width: 1000px) {
     .topnav.responsive {
         position: relative;
     }
@@ -335,8 +361,8 @@ address {
     box-sizing: border-box
 }input{
      font-size:20px;
-     background-image:linear-gradient(white,red,white);
-     color:black;
+     background-image:linear-gradient(grey,black);
+     color:white;
      font-weight:bold;
      border-radius:4px;
      border:ridge;
@@ -373,3 +399,56 @@ address {
 }
 
 
+
+
+
+
+.wrapper {
+    position: relative;
+    overflow: auto;
+}
+
+#top, #sidebar, #bottom, .menuitem {
+    border-radius: 4px;
+    margin: 4px;
+}
+
+#top {
+    background-color: #04AA6D;
+    color: #ffffff;
+    padding: 15px;
+}
+
+
+
+a {
+    color: #000000;
+    text-decoration: underline;
+}
+
+    a:hover {
+        text-decoration: none;
+    }
+
+
+@media (max-width: 800px) {
+    #sidebar {
+        width: auto;
+        position: relative;
+    }
+
+    #main {
+        margin-right: 0;
+    }
+}
+
+@media (max-width: 600px) {
+    #menubar {
+        width: auto;
+        float: none;
+    }
+
+    #main {
+        margin: 0;
+    }
+}

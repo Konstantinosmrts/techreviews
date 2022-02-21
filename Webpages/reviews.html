@@ -20,14 +20,22 @@
         <a href="reviews.html" class="active">Reviews </a>
         <a href="about.html">About </a>
         <a href="contact.html">Contact</a>
-        <a href="Help.html">Help</a>
+        <a href="Help.html">Help </a>
+        <a href="http://localhost:52652/Webpages/reviews.html#:~:text=13%20million%20inhabitants.-,New%20Consoles,-Title%20description%2C%20Dec"class="active">PC</a>
+        <a href="http://localhost:52652/Webpages/reviews.html#:~:text=13%20million%20inhabitants.-,New%20Consoles,-Title%20description%2C%20Dec"class="active">Tablets</a>
+        <a href="http://localhost:52652/Webpages/reviews.html#:~:text=13%20million%20inhabitants.-,New%20Consoles,-Title%20description%2C%20Dec"class="active">Smartphones</a>
+        <a href="http://localhost:52652/Webpages/reviews.html#:~:text=13%20million%20inhabitants.-,New%20Consoles,-Title%20description%2C%20Dec"class="active">TV & Audio</a>
+
+        <a href="http://localhost:52652/Webpages/reviews.html#:~:text=13%20million%20inhabitants.-,New%20Consoles,-Title%20description%2C%20Dec"class="active">Games</a>
         <div class="dropdown">
-            <button onclick="myFunction()" class="dropbtn">Accessibility</button>
+            <button onclick="myFunction()" class="dropbtn">Accessibility
+            </button>
             <div id="myDropdown" class="dropdown-content">
                 <input type="text" placeholder="Search.." id="myInput" onkeyup="filterFunction()">
                 <a href="Help.html"> How text to speech works</a>
                 <a>
                     Select Background Color:
+                    <button onclick="myFunction18()">Toggle dark mode</button>
                     <button type="button" onclick="myFunction5()">red</button>
                     <button type="button" onclick="myFunction6()">eye friendly</button>
                     <button type="button" onclick="myFunction7()">grey</button>
@@ -96,33 +104,21 @@
 
         <a href="javascript:void(0);" class="icon" onclick="myFunction14()">&#9776;</a>
     </div>
-    <div id="ac-wrapper" style='display:none'>
-        <div id="popup">
-            <center>
-                <h1>WARNING!</h1>
-                <h2> When browsing via tablet  it is adviced to hold it in landscape for better browsing experience.</h2>
-                <h2> When browsing via mobile phone it is adviced to leave the text in list view for better browsing experience. </h2>
-                <h2> The Website has build-in Text to Speech. You can select text with your computer mouse or touch for touchscreen devices to activate the text to speech functionality. </h2>
-                <h1>Click the button right below to continue browsing.</h1>
-
-                <input type="submit" name="submit" value="Understand" onClick="PopUp('hide')" />
-            </center>
-        </div>
-    </div>
+  
 
     <div class="grid-container" id="demo">
         <marquee direction="left">
             WARNING! IF BROWSING VIA TABLET IT IS ADVICED TO HOLD IT IN LANDSCAPE MODE  FOR BEST BROWSING EXPERIENCE / SELECT TEXT WITH MOUSE OR TOUCH TO ACTIVATE THE TEXT TO SPEACH
         </marquee>
 
+        
 
-
-
+        <button onclick="listView()"><i class="fa fa-bars"></i> List View</button>
+        <button onclick="gridView()"><i class="fa fa-th-large"></i> Grid View</button>
         <div class="row">
 
             <div class="column">
-                <button onclick="listView()"><i class="fa fa-bars"></i> List View</button>
-                <button onclick="gridView()"><i class="fa fa-th-large"></i> Grid View</button>
+
 
                 <article>
                     <h2>New Tablet from company</h2>
@@ -159,10 +155,12 @@
                     <br>
                     <br>
                     <br>
+                    <br>
+                    <br>
                     <a href="Webpages/reviews.html">
                         <img src="../Content/maxresdefault.jpg" alt="tablet " class="responsive" style="height:230px; float:left;" />
                     </a>
-                   <h3>London is the capital city of England. It is the most populous city in the  United Kingdom, with a metropolitan area of over 13 million inhabitants.</h3>
+                    <h3>London is the capital city of England. It is the most populous city in the  United Kingdom, with a metropolitan area of over 13 million inhabitants.</h3>
                     <h4> Date:13/04/2022</h4>
                     <p>Standing on the River Thames, London has been a major settlement for two millennia, its history going back to its founding by the Romans, who named it Londinium.</p>
                     <br>
@@ -171,12 +169,19 @@
                     <br>
                     <br>
                     <br>
+                    <br>
+
                     <a href="Webpages/reviews.html">
                         <img src="../Content/4929.jpg" alt="tablet " class="responsive" style="height:230px; float:left;" />
                     </a>
-                <h3>London is the capital city of England. It is the most populous city in the  United Kingdom, with a metropolitan area of over 13 million inhabitants.</h3>
+                    <h3>London is the capital city of England. It is the most populous city in the  United Kingdom, with a metropolitan area of over 13 million inhabitants.</h3>
                     <h4> Date:13/04/2022</h4>
                     <p>Standing on the River Thames, London has been a major settlement for two millennia, its history going back to its founding by the Romans, who named it Londinium.</p>
+                    <br>
+                    <br>
+                    <br>
+                    <br>
+                    <br>
                     <br>
                 </article>
 
@@ -194,59 +199,96 @@
                     <p>London is the capital city of England. It is the most populous city in the  United Kingdom, with a metropolitan area of over 13 million inhabitants.</p>
 
                 </article>
+            </div>
+              <div class="column">
+                  <h2>The tablet reinvented</h2>
+                  <h5>Title description, Dec 7, 2022</h5>
+                  <img src="../Content/samsunggalaxytab10-1.jpg" alt="tablet-computer" class="responsive" width="400" />
 
+
+                  <p>London is the capital city of England. It is the most populous city in the  United Kingdom, with a metropolitan area of over 13 million inhabitants.</p>
+                  <p>Standing on the River Thames, London has been a major settlement for two millennia, its history going back to its founding by the Romans, who named it Londinium.</p>
+                  <p>London is the capital city of England. It is the most populous city in the  United Kingdom, with a metropolitan area of over 13 million inhabitants.</p>
+                  <p>Standing on the River Thames, London has been a major settlement for two millennia, its history going back to its founding by the Romans, who named it Londinium.</p>
+                  <p>London is the capital city of England. It is the most populous city in the  United Kingdom, with a metropolitan area of over 13 million inhabitants.</p>
+                  <p>Standing on the River Thames, London has been a major settlement for two millennia, its history going back to its founding by the Romans, who named it Londinium.</p>
+
+                  <p>London is the capital city of England. It is the most populous city in the  United Kingdom, with a metropolitan area of over 13 million inhabitants.</p>
+
+                  <article>
+                      <h2>New tablets</h2>
+                      <h5>Title description, Dec 7, 2017</h5>
+                      <img src="../Content/4b609ada0000000000e9147b.jpeg" alt="tablet-computer" aria-label="tablet picture" class="responsive" width="400" />
+                      <h3>London is the capital city of England. It is the most populous city in the  United Kingdom, with a metropolitan area of over 13 million inhabitants.</h3>
+                      <p>Standing on the River Thames, London has been a major settlement for two millennia, its history going back to its founding by the Romans, who named it Londinium.</p>
+                      <p>London is the capital city of England. It is the most populous city in the  United Kingdom, with a metropolitan area of over 13 million inhabitants.</p>
+                      <p>Standing on the River Thames, London has been a major settlement for two millennia, its history going back to its founding by the Romans, who named it Londinium.</p>
+                      <p>London is the capital city of England. It is the most populous city in the  United Kingdom, with a metropolitan area of over 13 million inhabitants.</p>
+                      <p>Standing on the River Thames, London has been a major settlement for two millennia, its history going back to its founding by the Romans, who named it Londinium.</p>
+
+                      <p>London is the capital city of England. It is the most populous city in the  United Kingdom, with a metropolitan area of over 13 million inhabitants.</p>
+                  </article>
+
+                  <article>
+                      <h2>New Consoles</h2>
+                      <h5>Title description, Dec 7, 2017</h5>
+                      <img src="../Content/λήψη.jpeg" class="responsive" width="400" />
+                      <p>London is the capital city of England. It is the most populous city in the  United Kingdom, with a metropolitan area of over 13 million inhabitants.</p>
+                      <p>Standing on the River Thames, London has been a major settlement for two millennia, its history going back to its founding by the Romans, who named it Londinium.</p>
+                      <p>London is the capital city of England. It is the most populous city in the  United Kingdom, with a metropolitan area of over 13 million inhabitants.</p>
+                      <p>Standing on the River Thames, London has been a major settlement for two millennia, its history going back to its founding by the Romans, who named it Londinium.</p>
+                      <p>London is the capital city of England. It is the most populous city in the  United Kingdom, with a metropolitan area of over 13 million inhabitants.</p>
+                      <p>Standing on the River Thames, London has been a major settlement for two millennia, its history going back to its founding by the Romans, who named it Londinium.</p>
+
+                      <p>London is the capital city of England. It is the most populous city in the  United Kingdom, with a metropolitan area of over 13 million inhabitants.</p>
+                  </article>
             
-            </div>
-            <div class="column">
-                <h2>The tablet reinvented</h2>
-                <h5>Title description, Dec 7, 2022</h5>
-                <img src="../Content/samsunggalaxytab10-1.jpg" alt="tablet-computer" class="responsive" width="500" />
 
+                  <article>
+                      <h1>News</h1>
 
-                <p>London is the capital city of England. It is the most populous city in the  United Kingdom, with a metropolitan area of over 13 million inhabitants.</p>
-                <p>Standing on the River Thames, London has been a major settlement for two millennia, its history going back to its founding by the Romans, who named it Londinium.</p>
-                <p>London is the capital city of England. It is the most populous city in the  United Kingdom, with a metropolitan area of over 13 million inhabitants.</p>
-                <p>Standing on the River Thames, London has been a major settlement for two millennia, its history going back to its founding by the Romans, who named it Londinium.</p>
-                <p>London is the capital city of England. It is the most populous city in the  United Kingdom, with a metropolitan area of over 13 million inhabitants.</p>
-                <p>Standing on the River Thames, London has been a major settlement for two millennia, its history going back to its founding by the Romans, who named it Londinium.</p>
+                      <img src="../Content/htc-2.jpg" alt="tablet " class="responsive" style="height:100px; float:left;" />
+                      <p>London is the capital city of England. It is the most populous city in the  United Kingdom, with a metropolitan area of over 13 million inhabitants.</p>
+                      <br>
+                      <br>
+                      <br>
+                      <br>
+                      <br>
+                      <img src="../Content/4679839422_0b2f4d5a53_b.jpg" alt="smartphone " class="responsive" style="height:100px; float:left;" />
+                      <p>London is the capital city of England. It is the most populous city in the  United Kingdom, with a metropolitan area of over 13 million inhabitants.</p>
+                      <br>
+                      <br>
+                      <br>
+                      <br>
+                      <img src="../Content/4b609ada0000000000e9147b.jpeg" alt="tablet " class="responsive" style="height:100px; float:left;" />
+                      <p>London is the capital city of England. It is the most populous city in the  United Kingdom, with a metropolitan area of over 13 million inhabitants.</p>
+                      <br>
+                      <br>
+                  </article>
 
-                <p>London is the capital city of England. It is the most populous city in the  United Kingdom, with a metropolitan area of over 13 million inhabitants.</p>
+                  <article>
+                      <h1>News</h1>
 
-                <article>
-                    <h2>New tablets</h2>
-                    <h5>Title description, Dec 7, 2017</h5>
-                    <img src="../Content/4b609ada0000000000e9147b.jpeg" alt="tablet-computer" aria-label="tablet picture" class="responsive" width="500" />
-                    <h3>London is the capital city of England. It is the most populous city in the  United Kingdom, with a metropolitan area of over 13 million inhabitants.</h3>
-                    <p>Standing on the River Thames, London has been a major settlement for two millennia, its history going back to its founding by the Romans, who named it Londinium.</p>
-                    <p>London is the capital city of England. It is the most populous city in the  United Kingdom, with a metropolitan area of over 13 million inhabitants.</p>
-                    <p>Standing on the River Thames, London has been a major settlement for two millennia, its history going back to its founding by the Romans, who named it Londinium.</p>
-                    <p>London is the capital city of England. It is the most populous city in the  United Kingdom, with a metropolitan area of over 13 million inhabitants.</p>
-                    <p>Standing on the River Thames, London has been a major settlement for two millennia, its history going back to its founding by the Romans, who named it Londinium.</p>
+                      <img src="../Content/htc-2.jpg" alt="tablet " class="responsive" style="height:100px; float:left;" />
+                      <p>London is the capital city of England. It is the most populous city in the  United Kingdom, with a metropolitan area of over 13 million inhabitants.</p>
+                      <br>
+                      <br>
+                      <br>
+                      <br>
+                      <br>
+                      <img src="../Content/4679839422_0b2f4d5a53_b.jpg" alt="smartphone " class="responsive" style="height:100px; float:left;" />
+                      <p>London is the capital city of England. It is the most populous city in the  United Kingdom, with a metropolitan area of over 13 million inhabitants.</p>
+                      <br>
+                      <br>
+                      <br>
+                      <br>
+                      <img src="../Content/4b609ada0000000000e9147b.jpeg" alt="tablet " class="responsive" style="height:100px; float:left;" />
+                      <p>London is the capital city of England. It is the most populous city in the  United Kingdom, with a metropolitan area of over 13 million inhabitants.</p>
 
-                    <p>London is the capital city of England. It is the most populous city in the  United Kingdom, with a metropolitan area of over 13 million inhabitants.</p>
-                </article>
-            </div>
-            <div class="row">
-              <div class="column"
-                <article>
-                    <h2>New Consoles</h2>
-                    <h5>Title description, Dec 7, 2017</h5>
-                    <img src="../Content/λήψη.jpeg" class= "responsive" width="500" />
-                    <p>London is the capital city of England. It is the most populous city in the  United Kingdom, with a metropolitan area of over 13 million inhabitants.</p>
-                    <p>Standing on the River Thames, London has been a major settlement for two millennia, its history going back to its founding by the Romans, who named it Londinium.</p>
-                    <p>London is the capital city of England. It is the most populous city in the  United Kingdom, with a metropolitan area of over 13 million inhabitants.</p>
-                    <p>Standing on the River Thames, London has been a major settlement for two millennia, its history going back to its founding by the Romans, who named it Londinium.</p>
-                    <p>London is the capital city of England. It is the most populous city in the  United Kingdom, with a metropolitan area of over 13 million inhabitants.</p>
-                    <p>Standing on the River Thames, London has been a major settlement for two millennia, its history going back to its founding by the Romans, who named it Londinium.</p>
-
-                    <p>London is the capital city of England. It is the most populous city in the  United Kingdom, with a metropolitan area of over 13 million inhabitants.</p>
-                </article>
+                  </article>
               </div>
 
-
-
-
-            </div>
+          </div>
             <div class="row">
 
                 <div class="column">
@@ -257,6 +299,7 @@
 
                         <img src="../Content/htc-2.jpg" alt="tablet " class="responsive" style="height:100px; float:left;" />
                         <p>London is the capital city of England. It is the most populous city in the  United Kingdom, with a metropolitan area of over 13 million inhabitants.</p>
+                        <br>
                         <br>
                         <br>
                         <br>
@@ -289,7 +332,7 @@
                         <br>
                         <br>
                         <br>
-                        <img src="../Content/4929.jpg" alt= "tablet " class="responsive" style="height:100px; float:left;" />
+                        <img src="../Content/4929.jpg" alt="tablet " class="responsive" style="height:100px; float:left;" />
                         <p>London is the capital city of England. It is the most populous city in the  United Kingdom, with a metropolitan area of over 13 million inhabitants.</p>
                         <br>
                         <br>
@@ -298,24 +341,24 @@
                     </article>
                 </div>
             </div>
-          
-           
+
+
             <button onclick="topFunction()" id="myBtn" title="Go to top">Top</button>
         </div>
-    <div class="footer">
+        <div class="footer">
 
 
 
-        <h1> Bolton University New York College</h1>
-        <h2>Copyright 2022 "Technological Reviews"  </h2>
-        <h3>Created by konstantinos Moraitis</h3>
-        <h3><a href="Webpages/Help.html">Accessibility statement</a></h3>
-    </div>
+            <h1> Bolton University New York College</h1>
+            <h2>Copyright 2022 "Technological Reviews"  </h2>
+            <h3>Created by konstantinos Moraitis</h3>
+            <h3><a href="Webpages/Help.html">Accessibility statement</a></h3>
+        </div>
 
 
-    <script src="https://code.responsivevoice.org/responsivevoice.js?key=lL2tzw3J"></script>
+        <script src="https://code.responsivevoice.org/responsivevoice.js?key=lL2tzw3J"></script>
 
-    
+
 </body>
 
 </html>

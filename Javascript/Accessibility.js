@@ -126,3 +126,7 @@ $('textarea').keyup(function (e) {
 });
 
 
+function myFunction18() {
+    var element = document.body;
+    element.classList.toggle("dark-mode");
+}
