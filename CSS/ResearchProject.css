@@ -223,8 +223,6 @@ dropdown{
 .dropdown-content {
     display: none;
     position: initial;
-
-
     background-color: #f9f9f9;
     min-width: 160px;
     box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
@@ -236,7 +234,7 @@ dropdown{
 }
 .dropdown .bropbtn:hover{
     font-weight:bolder;
-    font-size:20px;
+    font-size:xx-large;
     background-image:linear-gradient(white,grey,white);
     cursor:pointer;
 }
@@ -278,6 +276,7 @@ dropdown{
 .dropdown:hover .dropdown-content {
     display: block;
     float:none;
+
     
    
 }
@@ -327,19 +326,22 @@ dropdown{
             text-align: left;
         }
 }
-
+address {
+    display: block;
+    font-style: italic;
+}
 
 * {
     box-sizing: border-box
 }input{
      font-size:20px;
-     background-image:linear-gradient(white,darkred,white);
-     color:white;
+     background-image:linear-gradient(white,red,white);
+     color:black;
      font-weight:bold;
      border-radius:4px;
      border:ridge;
      border-color:darkred;
-     cursor:pointer;
+     
      
  }
 
