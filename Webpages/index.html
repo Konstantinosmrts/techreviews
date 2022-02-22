@@ -1,0 +1,408 @@
+﻿<!DOCTYPE html>
+
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+
+    <meta charset="utf-8" />
+    <title></title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+
+    <link href="CSS/Experiments.css" rel="stylesheet" />
+    <script src="Javascript/Accessibility.js"></script>
+    <script src="Javascript/General.js"></script>
+
+
+    <!-- Custom styles for this template -->
+    <link href="https://fonts.googleapis.com/css?family=Playfair&#43;Display:700,900&amp;display=swap" rel="stylesheet">
+    <!-- Custom styles for this template -->
+    <link href="blog.css" rel="stylesheet">
+    <link rel="canonical" href="https://getbootstrap.com/docs/5.1/examples/blog/">
+
+    <!-- Bootstrap core CSS -->
+    <link href="../assets/dist/css/bootstrap.min.css" rel="stylesheet">
+
+    <style>
+        .bd-placeholder-img {
+            font-size: 1.125rem;
+            text-anchor: middle;
+            -webkit-user-select: none;
+            -moz-user-select: none;
+            user-select: none;
+        }
+
+        @media (min-width: 768px) {
+            .bd-placeholder-img-lg {
+                font-size: 3.5rem;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="sticky-top">
+        <nav class="navbar navbar-expand-lg navbar-dark bg-secondary bg-dark ">
+            <a class="navbar-brand" href="index.html">Technological Reviews</a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav mr-auto">
+                    <li class="nav-item active">
+                        <a class="nav-link" href="index.html">Home <span class="sr-only">(current)</span></a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="Webpages/reviews.html">Reviews</a>
+                    </li>
+
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Contact</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Help</a>
+                    </li>
+
+
+                    <!-- Modal -->
+                    <div class="modal fade" id="exampleModalCenter" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+                        <div class="modal-dialog modal-dialog-centered" role="document">
+                            <div class="modal-content">
+                                <div class="modal-header">
+                                    <h5 class="modal-title" id="exampleModalLongTitle">Accessibility Elements</h5>
+                                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                        <span aria-hidden="true">&times;</span>
+                                    </button>
+                                </div>
+                                <div class="modal-body">
+                                    <h5>Select Background Color</h5>
+
+                                    <button class="btn btn-secondary" data-toggle="tooltip" data-placement="top" title="Tooltip on top" onclick="myFunction18()">Toggle dark mode</button>
+                                    <button type="button" class="btn btn-secondary" data-toggle="tooltip" data-placement="top" title="Tooltip on top" onclick="myFunction5()">red</button>
+                                    <button type="button" class="btn btn-secondary" data-toggle="tooltip" data-placement="top" title="Tooltip on top" onclick="myFunction6()">eye friendly</button>
+                                    <button type="button" class="btn btn-secondary" data-toggle="tooltip" data-placement="top" title="Tooltip on top" onclick="myFunction7()">grey</button>
+                                    <button type="button" class="btn btn-secondary" data-toggle="tooltip" data-placement="top" title="Tooltip on top" onclick="myFunction12()">green</button>
+                                    <hr>
+                                    <h5>Learn how to navigate</h5>
+                                    <h5> <a href="Webpages/Help.html"> How text to speech works</a></h5>
+                                    <br />
+                                    <hr />
+                                    <h5>Select Font Size</h5>
+
+
+                                    <button type="button" class="btn btn-secondary" data-toggle="tooltip" data-placement="top" title="Make text smaller by clicking this button" onclick="myFunction4()">Smaller </button>
+                                    <button type="button" class="btn btn-secondary" data-toggle="tooltip" data-placement="top" title="Make text normal at the original settings by clicking this button" onclick="myFunction2()">Normal </button>
+                                    <button type="button" class="btn btn-secondary" data-toggle="tooltip" data-placement="top" title="Make text larger by clicking this button" onclick="myFunction3()">Large </button>
+                                    <hr>
+                                    <h5>  Select Custom Font Size:</h5>
+
+                                    <select onchange="myFunction(this);" size="12">
+                                        <option>xx-small</option>
+                                        <option>x-small</option>
+                                        <option>small</option>
+                                        <option>medium</option>
+                                        <option>large</option>
+                                        <option>x-large</option>
+                                        <option>xx-large</option>
+                                        <option>100%</option>
+                                        <option>250%</option>
+                                        <option>2cm</option>
+                                        <option>100px</option>
+
+                                    </select>
+                                    <hr>
+                                    <h5> Select Font Family:</h5>
+
+
+
+                                    <select onchange="myFunction10(this);" size="13">
+                                        <option>Georgia</option>
+                                        <option>Palatino Linotype</option>
+                                        <option>Book Antiqua</option>
+                                        <option>Times New Roman</option>
+                                        <option>Arial</option>
+                                        <option>Helvetica</option>
+                                        <option>Arial Black</option>
+                                        <option>Impact</option>
+                                        <option>Lucida Sans Unicode</option>
+                                        <option>Tahoma</option>
+                                        <option>Verdana</option>
+                                        <option>Courier New</option>
+                                        <option>Lucida Console</option>
+                                    </select>
+                                </div>
+
+                                <div class="modal-footer">
+                                    <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Button trigger modal -->
+                    <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#exampleModalCenter">
+                        Accessibility
+                    </button>
+                </ul>
+                <form class="form-inline my-2 my-lg-0">
+                    <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
+                    <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
+                </form>
+
+            </div>
+
+        </nav>
+</div>
+        <div id="ac-wrapper" style='display:none'>
+            <div id="popup">
+                <center>
+                    <h1>WARNING! </h1>
+
+                    <h3> When browsing via tablet  it is adviced to hold it in landscape for better browsing experience.</h3>
+                    <hr />
+                    <h3> The Website has build-in Text to Speech. <hr>You can select text with your computer mouse or touch for touchscreen devices to activate the text to speech functionality. </h3>
+                    <hr>
+                    <h4>Click the button right below to continue browsing.</h4>
+
+                    <input type="submit" name="submit" value="Understand" onClick="PopUp('hide')" />
+                </center>
+            </div>
+        </div>
+        <div class="grid-container" id="demo">
+
+            <marquee direction="left" class=" bg-warning">
+                SELECT TEXT WITH MOUSE OR TOUCH TO ACTIVATE THE TEXT TO SPEACH
+            </marquee>
+
+            <main class="container">
+                <div class="p-4 p-md-5 mb-4 text-white rounded bg-info">
+                    <div class="col-md-6 px-0">
+
+                        <h1 class="display-4 fst-italic">Welcome to Technological Reviews</h1>
+                        <p class="lead my-3">Learn all about technological news</p>
+
+                    </div>
+                </div>
+                <div class="row mb-2">
+                    <div class="col-md-6">
+                        <div class="row g-0 border rounded overflow-hidden flex-md-row mb-4 shadow-sm h-md-250 position-relative">
+                            <div class="col p-4 d-flex flex-column position-static">
+                                <strong class="d-inline-block mb-2 text-primary">World</strong>
+                                <h3 class="mb-0">Featured post</h3>
+                                <div class="mb-1 text-muted">Nov 12</div>
+                                <p class="card-text mb-auto">This is a wider card with supporting text below as a natural lead-in to additional content.</p>
+                                <a href="#" class="stretched-link">Continue reading</a>
+                            </div>
+                            <div class="col-auto d-none d-lg-block">
+                                <img class="responsive" src="Content/4679839422_0b2f4d5a53_b.jpg" alt="phone" width="200" height="250" />
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-md-6">
+                        <div class="row g-0 border rounded overflow-hidden flex-md-row mb-4 shadow-sm h-md-250 position-relative">
+                            <div class="col p-4 d-flex flex-column position-static">
+                                <strong class="d-inline-block mb-2 text-success">Design</strong>
+                                <h3 class="mb-0">Post title</h3>
+                                <div class="mb-1 text-muted">Nov 11</div>
+                                <p class="mb-auto">This is a wider card with supporting text below as a natural lead-in to additional content.</p>
+                                <a href="#" class="stretched-link">Continue reading</a>
+                            </div>
+                            <div class="col-auto d-none d-lg-block">
+                                <img class="responsive" src="Content/it_photo_118213.jpg" alt="phone" width="200" height="250" />
+                            </div>
+                        </div>
+                    </div>
+
+
+                </div>
+                <div class=" responsive card-deck">
+                    <div class="card">
+                        <img class="responsive card-img-top" src="Content/4679839422_0b2f4d5a53_b.jpg" alt="Card image cap">
+                        <div class="card-body">
+                            <h5 class="card-title">Card title</h5>
+                            <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+                        </div>
+                        <div class="card-footer">
+                            <small class="text-muted">Last updated 3 mins ago</small>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <img class="card-img-top" src="..." alt="Card image cap">
+                        <div class="card-body">
+                            <h5 class="card-title">Card title</h5>
+                            <p class="card-text">This card has supporting text below as a natural lead-in to additional content.</p>
+                        </div>
+                        <div class="card-footer">
+                            <small class="text-muted">Last updated 3 mins ago</small>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <img class="card-img-top" src="..." alt="Card image cap">
+                        <div class="card-body">
+                            <h5 class="card-title">Card title</h5>
+                            <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This card has even longer content than the first to show that equal height action.</p>
+                        </div>
+                        <div class="card-footer">
+                            <small class="text-muted">Last updated 3 mins ago</small>
+                        </div>
+                    </div>
+
+                </div>
+                <br />
+                <div class="row g-5">
+                    <div class="col-md-8">
+                        <h3 class="pb-4 mb-4 fst-italic border-bottom">
+                            From the Firehose
+                        </h3>
+
+                        <article class="blog-post">
+                            <h2 class="blog-post-title">Sample blog post</h2>
+                            <p class="blog-post-meta">January 1, 2021 by <a href="#">Mark</a></p>
+
+                            <p>This blog post shows a few different types of content that’s supported and styled with Bootstrap. Basic typography, lists, tables, images, code, and more are all supported as expected.</p>
+                            <hr>
+                            <p>This is some additional paragraph placeholder content. It has been written to fill the available space and show how a longer snippet of text affects the surrounding content. We'll repeat it often to keep the demonstration flowing, so be on the lookout for this exact same string of text.</p>
+                            <div class="list-group">
+                                <a href="#" class="list-group-item list-group-item-action flex-column align-items-start active ">
+                                    <div class="d-flex w-100 justify-content-between">
+                                        <h5 class="mb-1">List group item heading</h5>
+                                        <small>3 days ago</small>
+                                    </div>
+                                    <p class="mb-1">Donec id elit non mi porta gravida at eget metus. Maecenas sed diam eget risus varius blandit.</p>
+                                    <small>Donec id elit non mi porta.</small>
+                                </a>
+                                <a href="#" class="list-group-item list-group-item-action flex-column align-items-start ">
+                                    <div class="d-flex w-100 justify-content-between">
+                                        <h5 class="mb-1">List group item heading</h5>
+                                        <small class="text-muted">3 days ago</small>
+                                    </div>
+                                    <p class="mb-1">Donec id elit non mi porta gravida at eget metus. Maecenas sed diam eget risus varius blandit.</p>
+                                    <small class="text-muted">Donec id elit non mi porta.</small>
+                                </a>
+                                <a href="#" class="list-group-item list-group-item-action flex-column align-items-start ">
+                                    <div class="d-flex w-100 justify-content-between">
+                                        <h5 class="mb-1">List group item heading</h5>
+                                        <small class="text-muted">3 days ago</small>
+                                    </div>
+                                    <p class="mb-1">Donec id elit non mi porta gravida at eget metus. Maecenas sed diam eget risus varius blandit.</p>
+                                    <small class="text-muted">Donec id elit non mi porta.</small>
+                                </a>
+                            </div>
+                            <br />
+
+
+                            <h2>Inline HTML elements</h2>
+                            <p>HTML defines a long list of available inline tags, a complete list of which can be found on the <a href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element">Mozilla Developer Network</a>.</p>
+                            <ul>
+                                <li><strong>To bold text</strong>, use <code class="language-plaintext highlighter-rouge">&lt;strong&gt;</code>.</li>
+                                <li><em>To italicize text</em>, use <code class="language-plaintext highlighter-rouge">&lt;em&gt;</code>.</li>
+                                <li>Abbreviations, like <abbr title="HyperText Markup Langage">HTML</abbr> should use <code class="language-plaintext highlighter-rouge">&lt;abbr&gt;</code>, with an optional <code class="language-plaintext highlighter-rouge">title</code> attribute for the full phrase.</li>
+                                <li>Citations, like <cite>— Mark Otto</cite>, should use <code class="language-plaintext highlighter-rouge">&lt;cite&gt;</code>.</li>
+                                <li><del>Deleted</del> text should use <code class="language-plaintext highlighter-rouge">&lt;del&gt;</code> and <ins>inserted</ins> text should use <code class="language-plaintext highlighter-rouge">&lt;ins&gt;</code>.</li>
+                                <li>Superscript <sup>text</sup> uses <code class="language-plaintext highlighter-rouge">&lt;sup&gt;</code> and subscript <sub>text</sub> uses <code class="language-plaintext highlighter-rouge">&lt;sub&gt;</code>.</li>
+                            </ul>
+                            <p>Most of these elements are styled by browsers with few modifications on our part.</p>
+
+                        </article>
+
+                        <article class="blog-post">
+                            <h2 class="blog-post-title">Another blog post</h2>
+                            <p class="blog-post-meta">December 23, 2020 by <a href="#">Jacob</a></p>
+
+                            <p>This is some additional paragraph placeholder content. It has been written to fill the available space and show how a longer snippet of text affects the surrounding content. We'll repeat it often to keep the demonstration flowing, so be on the lookout for this exact same string of text.</p>
+                            <blockquote>
+                                <p>Longer quote goes here, maybe with some <strong>emphasized text</strong> in the middle of it.</p>
+                            </blockquote>
+                            <p>This is some additional paragraph placeholder content. It has been written to fill the available space and show how a longer snippet of text affects the surrounding content. We'll repeat it often to keep the demonstration flowing, so be on the lookout for this exact same string of text.</p>
+                        </article>
+
+                        <article class="blog-post">
+                            <h2 class="blog-post-title">New feature</h2>
+                            <p class="blog-post-meta">December 14, 2020 by <a href="#">Chris</a></p>
+
+                            <p>This is some additional paragraph placeholder content. It has been written to fill the available space and show how a longer snippet of text affects the surrounding content. We'll repeat it often to keep the demonstration flowing, so be on the lookout for this exact same string of text.</p>
+                            <ul>
+                                <li>First list item</li>
+                                <li>Second list item with a longer description</li>
+                                <li>Third list item to close it out</li>
+                            </ul>
+                            <p>This is some additional paragraph placeholder content. It's a slightly shorter version of the other highly repetitive body text used throughout.</p>
+                        </article>
+
+                        <nav class="blog-pagination" aria-label="Pagination">
+                            <a class="btn btn-outline-primary" href="#">Older</a>
+                            <a class="btn btn-outline-secondary disabled">Newer</a>
+                        </nav>
+
+                    </div>
+
+                    <div class="col-md-4">
+                        <div class="position-sticky" style="top: 2rem;">
+                            <div class="p-4 mb-3 bg-dark text-white rounded">
+                                <h4 class="fst-italic">About</h4>
+                                <p class="mb-0">Customize this section to tell your visitors a little bit about your publication, writers, content, or something else entirely. Totally up to you.</p>
+                            </div>
+                            <div class="responsive card bg-dark text-white rounded" style="width: 22rem;">
+                                <img class="card-img-top" src="Content/Ballmer-MSFT-tablet.jpg" width="500 " alt="Tablet">
+                                <div class="card-body">
+                                    <h5 class="card-title">New tablet from Microsoft</h5>
+                                    <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                                    <a href="http://localhost:52652/Webpages/reviews.html#:~:text=The%20New%20Surface%20by%20Microsoft" class="btn btn-primary">Full Review</a>
+
+                                </div>
+                            </div><br />
+
+                            <div class=" responsive card bg-dark text-white rounded" style="width: 22rem;">
+                                <img class="card-img-top" src="Content/samsunggalaxytab10-1.jpg" width="500" alt="Tablet">
+                                <div class="card-body">
+                                    <h5 class="card-title">The new galaxy tablet from Samsung</h5>
+                                    <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                                    <a href="#" class="btn btn-primary">Full Review</a>
+
+
+                                </div>
+                            </div><br />
+
+
+                            <div class="responsive card bg-dark text-white rounded" style="width: 22rem;">
+                                <img class="card-img-top" src="Content/4b609ada0000000000e9147b.jpeg" width="500" alt="Tablet">
+                                <div class="card-body">
+                                    <h5 class="card-title">New Tablet from Apple</h5>
+                                    <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                                    <a href="#" class="btn btn-primary">Full Review</a>
+                                </div>
+                            </div>
+
+                            <div class="p-4">
+                                <h4 class="fst-italic">Elsewhere</h4>
+                                <ol class="list-unstyled">
+                                    <li><a href="#">GitHub</a></li>
+                                    <li><a href="#">Twitter</a></li>
+                                    <li><a href="#">Facebook</a></li>
+                                </ol>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+            </main>
+
+
+
+        </div>
+
+
+        <script src="https://code.responsivevoice.org/responsivevoice.js?key=lL2tzw3J"></script>
+
+</body>
+</html>
+<footer class="blog-footer">
+    <p>"Technological Reviews" Created by Konstantinos Moraitis.</p>
+    <p>
+        <a href="#">Back to top</a>
+    </p>
+</footer>

@@ -5,7 +5,16 @@
   border-bottom: 1px solid #e5e5e5;
   background-image:linear-gradient(lightgrey,white);
 }
-
+.responsive {
+    max-width: 100%;
+    height: auto;
+    padding: 3px;
+    margin: auto;
+}
+.dark-mode {
+    background-color: black;
+    color: white;
+}
 .blog-header-logo {
   font-family: "Playfair Display", Georgia, "Times New Roman", serif/*rtl:Amiri, Georgia, "Times New Roman", serif*/;
   font-size: 2.25rem;
@@ -14,11 +23,6 @@
 .blog-header-logo:hover {
   text-decoration: underline;
   font-weight:bold;
-}
-.dark-mode {
-    background-color: black;
-    color: white;
-    
 }
 
 h1, h2, h3, h4, h5, h6 {
@@ -137,7 +141,7 @@ h1, h2, h3, h4, h5, h6 {
     font-size: 2.5rem;
 }
 
-@media (min-width: 768px) {
+@media (min-width:768px) {
     .display-4 {
         font-size: 3rem;
     }
@@ -348,7 +352,10 @@ h1, h2, h3, h4, h5, h6 {
     }
 
 
-
+ .navbar a:hover{
+    font-weight:bold;
+    background:black;
+ }
 
 #ac-wrapper {
     position: relative;
@@ -364,8 +371,11 @@ h1, h2, h3, h4, h5, h6 {
 #popup {
     width: auto;
     height: auto;
-    background-color:whitesmoke;
+    padding:15px;
     color: black;
+    margin:auto;
+    border-radius: 8px;
+    
     box-shadow: #64686e 0px 0px 3px 3px;
     -moz-box-shadow: #64686e 0px 0px 3px 3px;
     -webkit-box-shadow: #64686e 0px 0px 3px 3px;
@@ -376,11 +386,3 @@ h1, h2, h3, h4, h5, h6 {
     position: relative;
     overflow: auto;
 }
-
-.text-primary {
-    --bs-text-opacity: 1;
-    color: rgba(var(--bs-primary-rgb), var(--bs-text-opacity)) !important;
-}
-
-
-
