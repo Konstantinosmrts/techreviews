@@ -130,3 +130,7 @@ function myFunction18() {
     var element = document.body;
     element.classList.toggle("dark-mode");
 }
+
+$('#myModal').on('shown.bs.modal', function () {
+    $('#myInput').trigger('focus')
+})
