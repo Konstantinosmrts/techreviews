@@ -1,102 +1,91 @@
 ﻿<!DOCTYPE html>
-<html lang="en">
 
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml">
 <head>
-    <title>Technological Reviews</title>
-    <link rel="icon" type="Content/gorillapad-6.jpg" href="Content/gorillapad-6.jpg">
-    <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <script src="../Javascript/General.js"></script>
+
+
+    <meta charset="utf-8" />
+    <title></title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+    <link href="../CSS/Experiments.css" rel="stylesheet" />
     <script src="../Javascript/Accessibility.js"></script>
-    <link href="../CSS/ResearchProject.css" rel="stylesheet" />
+    <script src="../Javascript/General.js"></script>
+    <!-- Custom styles for this template -->
+    <link href="https://fonts.googleapis.com/css?family=Playfair&#43;Display:700,900&amp;display=swap" rel="stylesheet">
+    <!-- Custom styles for this template -->
+    <link href="blog.css" rel="stylesheet">
+    <link rel="canonical" href="https://getbootstrap.com/docs/5.1/examples/blog/">
+
+    <!-- Bootstrap core CSS -->
+    <link href="../assets/dist/css/bootstrap.min.css" rel="stylesheet">
+
+    <style>
+        .bd-placeholder-img {
+            font-size: 1.125rem;
+            text-anchor: middle;
+            -webkit-user-select: none;
+            -moz-user-select: none;
+            user-select: none;
+        }
+
+        @media (min-width: 768px) {
+            .bd-placeholder-img-lg {
+                font-size: 3.5rem;
+            }
+        }
+    </style>
 </head>
-
-
-
 <body>
-    <div class="topnav" id="myTopnav">
+    <div class="sticky-top">
+        <nav class="navbar navbar-expand-lg navbar-dark bg-secondary bg-dark ">
+            <a class="navbar-brand" href="../index.html">Technological Reviews</a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
 
-        <a href="../index.html">Home</a>
-        <a href="reviews.html">Reviews </a>
-        <a href="about.html">About </a>
-        <a href="contact.html">Contact</a>
-        <a href="Help.html" class="active">Help</a>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav mr-auto">
+                    <li class="nav-item ">
+                        <a class="nav-link" href="../index.html">Home </a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="../Webpages/reviews.html">Reviews</a>
+                    </li>
 
-        <div class="dropdown">
-            <button onclick="myFunction()" class="dropbtn">Accessibility</button>
-            <div id="myDropdown" class="dropdown-content">
-                <input type="text" placeholder="Search.." id="myInput" onkeyup="filterFunction()">
-                <a href="Help.html"> How text to speech works</a>
-                <a>
-                    Select Background Color:
-                    <button onclick="myFunction()">Toggle dark mode</button>
-                    <button type="button" onclick="myFunction5()">red</button>
-                    <button type="button" onclick="myFunction6()">eye friendly</button>
-                    <button type="button" onclick="myFunction7()">grey</button>
-                    <button type="button" onclick="myFunction12()">green</button>
+                    <li class="nav-item">
+                        <a class="nav-link" href="../Webpages/contact.html">Contact</a>
+                    </li>
+                    <li class="nav-item active">
+                        <a class="nav-link" href="../Webpages/Help.html">Help<span class="sr-only">(current)</span></a>
+                    </li>
+                    <!-- Button trigger modal -->
+                    <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#exampleModalCenter">
+                        Accessibility
+                    </button>
 
-                </a>
-                <a>
-                    Select Font Size:
-                    <button type="button" onclick="myFunction4()">Smaller </button>
-                    <button type="button" onclick="myFunction2()">Normal </button>
-                    <button type="button" onclick="myFunction3()">Large </button>
-                </a>
-                <a>
-                    Select Custom Font Size:
-                    <select onchange="myFunction(this);" size="12">
-                        <option>xx-small</option>
-                        <option>x-small</option>
-                        <option>small</option>
-                        <option>medium</option>
-                        <option>large</option>
-                        <option>x-large</option>
-                        <option>xx-large</option>
-                        <option>100%</option>
-                        <option>250%</option>
-                        <option>2cm</option>
-                        <option>100px</option>
+                </ul>
+                <form class="form-inline my-2 my-lg-0">
+                    <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
+                    <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
+                </form>
 
-                    </select>
-                </a>
-
-
-                <a>
-                    Select Font Family:
-
-
-                    <select onchange="myFunction10(this);" size="13">
-                        <option>Georgia</option>
-                        <option>Palatino Linotype</option>
-                        <option>Book Antiqua</option>
-                        <option>Times New Roman</option>
-                        <option>Arial</option>
-                        <option>Helvetica</option>
-                        <option>Arial Black</option>
-                        <option>Impact</option>
-                        <option>Lucida Sans Unicode</option>
-                        <option>Tahoma</option>
-                        <option>Verdana</option>
-                        <option>Courier New</option>
-                        <option>Lucida Console</option>
-                    </select>
-                </a>
             </div>
-        </div>
 
-        <a href="javascript:void(0);" class="icon" onclick="myFunction14()">&#9776;</a>
+        </nav>
     </div>
 
     <div class="grid-container" id="demo">
-        <marquee direction="left">
-            WARNING! IF BROWSING VIA TABLET IT IS ADVICED TO REFRESH THE PAGE FOR LANDSCAPE BROWSING FOR BEST VIEWING EXPERIENCE / SELECT TEXT WITH MOUSE OR TOUCH TO ACTIVATE THE TEXT TO SPEACH
+        <marquee direction="left" class=" bg-warning">
+            SELECT TEXT WITH MOUSE OR TOUCH TO ACTIVATE THE TEXT TO SPEACH
         </marquee>
 
+        <main class="container">
+            <article>
 
-
-
-        <div class="row">
-            <div class="column">
 
                 <h1>What is text to speech </h1>
                 <p>
@@ -105,7 +94,8 @@
                 </p>
                 <h1>How text to speach works video below</h1>
                 <iframe src="https://www.youtube.com/embed/VXaathYP7Dw" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-            </div>
+
+            </article>
             <div class="column">
                 <h1>Accessibility statement </h1>
                 <p>"Technological Reviews" is committed to making its website usable and accessible to everyone, regardless of technology or ability. We aim to comply with all applicable standards, including the Web Content Accessibility Guidelines 2.1 Level AA. If you experience any difficulty in accessing any part of this website or have any questions or concerns regarding its accessibility, please feel free to email us.</p>
@@ -378,26 +368,102 @@
 
 
 
-            <button onclick="topFunction()" id="myBtn" title="Go to top">Top</button>
+
+        </main>
+    </div>
+
+
+
+
+
+
+
+
+    <!-- Modal -->
+    <div class="modal fade" id="exampleModalCenter" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="exampleModalLongTitle">Accessibility Elements</h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+                <div class="modal-body">
+                    <h5>Select Background Color</h5>
+
+                    <button class="btn btn-secondary" data-toggle="tooltip" data-placement="top" title="Tooltip on top" onclick="myFunction18()">Toggle dark mode</button>
+                    <button type="button" class="btn btn-secondary" data-toggle="tooltip" data-placement="top" title="Tooltip on top" onclick="myFunction5()">red</button>
+                    <button type="button" class="btn btn-secondary" data-toggle="tooltip" data-placement="top" title="Tooltip on top" onclick="myFunction6()">eye friendly</button>
+                    <button type="button" class="btn btn-secondary" data-toggle="tooltip" data-placement="top" title="Tooltip on top" onclick="myFunction7()">grey</button>
+                    <button type="button" class="btn btn-secondary" data-toggle="tooltip" data-placement="top" title="Tooltip on top" onclick="myFunction12()">green</button>
+                    <p>Please switch off each color by pressing it again if you wish to change </p>
+                    <hr>
+                    <h5>Learn how to navigate</h5>
+                    <h5> <a href="Webpages/Help.html"> How text to speech works</a></h5>
+                    <br />
+                    <hr />
+                    <h5>Select Font Size</h5>
+
+
+                    <button type="button" class="btn btn-secondary" data-toggle="tooltip" data-placement="top" title="Make text smaller by clicking this button" onclick="myFunction4()">Smaller </button>
+                    <button type="button" class="btn btn-secondary" data-toggle="tooltip" data-placement="top" title="Make text normal at the original settings by clicking this button" onclick="myFunction2()">Normal </button>
+                    <button type="button" class="btn btn-secondary" data-toggle="tooltip" data-placement="top" title="Make text larger by clicking this button" onclick="myFunction3()">Large </button>
+                    <hr>
+                    <h5>  Select Custom Font Size:</h5>
+
+                    <select onchange="myFunction(this);" size="12">
+                        <option>xx-small</option>
+                        <option>x-small</option>
+                        <option>small</option>
+                        <option>medium</option>
+                        <option>large</option>
+                        <option>x-large</option>
+                        <option>xx-large</option>
+                        <option>100%</option>
+                        <option>250%</option>
+                        <option>2cm</option>
+                        <option>100px</option>
+
+                    </select>
+                    <hr>
+                    <h5> Select Font Family:</h5>
+
+
+
+                    <select onchange="myFunction10(this);" size="13">
+                        <option>Georgia</option>
+                        <option>Palatino Linotype</option>
+                        <option>Book Antiqua</option>
+                        <option>Times New Roman</option>
+                        <option>Arial</option>
+                        <option>Helvetica</option>
+                        <option>Arial Black</option>
+                        <option>Impact</option>
+                        <option>Lucida Sans Unicode</option>
+                        <option>Tahoma</option>
+                        <option>Verdana</option>
+                        <option>Courier New</option>
+                        <option>Lucida Console</option>
+                    </select>
+                </div>
+
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+
+                </div>
+            </div>
         </div>
-        <div class="footer">
+    </div>
 
-
-
-            <h1> Bolton University New York College</h1>
-            <h2>Copyright 2022 "Technological Reviews"  </h2>
-            <h3>Created by konstantinos Moraitis</h3>
-            <h3><a href="Webpages/Help.html">Accessibility statement</a></h3>
-        </div>
-
-
-        <script src="https://code.responsivevoice.org/responsivevoice.js?key=lL2tzw3J"></script>
-
-
-
+    <script src="https://code.responsivevoice.org/responsivevoice.js?key=lL2tzw3J"></script>
 </body>
-
 </html>
-
+<footer class="blog-footer">
+    <p>"Technological Reviews" Created by Konstantinos Moraitis.</p>
+    <p>
+        <a href="#">Back to top</a>
+    </p>
+</footer>
 
 

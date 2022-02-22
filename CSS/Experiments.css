@@ -5,6 +5,18 @@
   border-bottom: 1px solid #e5e5e5;
   background-image:linear-gradient(lightgrey,white);
 }
+.navbar {
+margin:auto;
+
+
+}
+.navbar a:hover{
+    background-color:darkred;
+    font-weight:bold;
+    overflow:hidden;
+    margin:auto;
+
+}
 .responsive {
     max-width: 100%;
     height: auto;
@@ -352,10 +364,7 @@ h1, h2, h3, h4, h5, h6 {
     }
 
 
- .navbar a:hover{
-    font-weight:bold;
-    background:black;
- }
+
 
 #ac-wrapper {
     position: relative;
