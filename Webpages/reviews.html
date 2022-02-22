@@ -1,365 +1,432 @@
 ﻿<!DOCTYPE html>
-<html lang="en">
 
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml">
 <head>
-    <title>Technological Reviews</title>
-    <link rel="icon" type="Content/gorillapad-6.jpg" href="Content/gorillapad-6.jpg">
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta charset="utf-8" />
+    <title></title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+    <link href="../CSS/Experiments.css" rel="stylesheet" />
     <script src="../Javascript/Accessibility.js"></script>
-    <link href="../CSS/ResearchProject.css" rel="stylesheet" />
     <script src="../Javascript/General.js"></script>
+
+    <link rel="canonical" href="https://getbootstrap.com/docs/5.1/examples/blog/">
+
+
+
+    <!-- Bootstrap core CSS -->
+    <link href="../assets/dist/css/bootstrap.min.css" rel="stylesheet">
+
+    <style>
+        .bd-placeholder-img {
+            font-size: 1.125rem;
+            text-anchor: middle;
+            -webkit-user-select: none;
+            -moz-user-select: none;
+            user-select: none;
+        }
+
+        @media (min-width: 768px) {
+            .bd-placeholder-img-lg {
+                font-size: 3.5rem;
+            }
+        }
+    </style>
+
+
+    <!-- Custom styles for this template -->
+    <link href="https://fonts.googleapis.com/css?family=Playfair&#43;Display:700,900&amp;display=swap" rel="stylesheet">
+    <!-- Custom styles for this template -->
+    <link href="blog.css" rel="stylesheet">
 </head>
-
-
-
 <body>
-    <div class="topnav" id="myTopnav">
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark   ">
+        <a class="navbar-brand" href="../index.html">Technological Reviews</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
 
-        <a href="../index.html">Home</a>
-        <a href="reviews.html" class="active">Reviews </a>
-        <a href="about.html">About </a>
-        <a href="contact.html">Contact</a>
-        <a href="Help.html">Help </a>
-        <a href="http://localhost:52652/Webpages/reviews.html#:~:text=13%20million%20inhabitants.-,New%20Consoles,-Title%20description%2C%20Dec"class="active">PC</a>
-        <a href="http://localhost:52652/Webpages/reviews.html#:~:text=13%20million%20inhabitants.-,New%20Consoles,-Title%20description%2C%20Dec"class="active">Tablets</a>
-        <a href="http://localhost:52652/Webpages/reviews.html#:~:text=13%20million%20inhabitants.-,New%20Consoles,-Title%20description%2C%20Dec"class="active">Smartphones</a>
-        <a href="http://localhost:52652/Webpages/reviews.html#:~:text=13%20million%20inhabitants.-,New%20Consoles,-Title%20description%2C%20Dec"class="active">TV & Audio</a>
-
-        <a href="http://localhost:52652/Webpages/reviews.html#:~:text=13%20million%20inhabitants.-,New%20Consoles,-Title%20description%2C%20Dec"class="active">Games</a>
-        <div class="dropdown">
-            <button onclick="myFunction()" class="dropbtn">Accessibility
-            </button>
-            <div id="myDropdown" class="dropdown-content">
-                <input type="text" placeholder="Search.." id="myInput" onkeyup="filterFunction()">
-                <a href="Help.html"> How text to speech works</a>
-                <a>
-                    Select Background Color:
-                    <button onclick="myFunction18()">Toggle dark mode</button>
-                    <button type="button" onclick="myFunction5()">red</button>
-                    <button type="button" onclick="myFunction6()">eye friendly</button>
-                    <button type="button" onclick="myFunction7()">grey</button>
-                    <button type="button" onclick="myFunction12()">green</button>
-
-                </a>
-                <a>
-                    Select Font Size:
-                    <button type="button" onclick="myFunction4()">Smaller </button>
-                    <button type="button" onclick="myFunction2()">Normal </button>
-                    <button type="button" onclick="myFunction3()">Large </button>
-                </a>
-                <a>
-                    Select Custom Font Size:
-                    <select onchange="myFunction(this);" size="12">
-                        <option>xx-small</option>
-                        <option>x-small</option>
-                        <option>small</option>
-                        <option>medium</option>
-                        <option>large</option>
-                        <option>x-large</option>
-                        <option>xx-large</option>
-                        <option>100%</option>
-                        <option>250%</option>
-                        <option>2cm</option>
-                        <option>100px</option>
-
-                    </select>
-                </a>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav mr-auto">
+                <li class="nav-item active">
+                    <a class="nav-link" href="../index.html">Home </a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="reviews.html">Reviews<span class="sr-only">(current)</span></a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">About</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">Contact</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">Help</a>
+                </li>
 
 
-                <a>
-                    Select Font Family:
+                <!-- Modal -->
+                <div class="modal fade" id="exampleModalCenter" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+                    <div class="modal-dialog modal-dialog-centered" role="document">
+                        <div class="modal-content">
+                            <div class="modal-header">
+                                <h5 class="modal-title" id="exampleModalLongTitle">Accessibility Elements</h5>  <input type="text" placeholder="Search.." id="myInput" onkeyup="filterFunction()">
+                                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                    <span aria-hidden="true">&times;</span>
+                                </button>
+                            </div>
+                            <div class="modal-body">
+                                <h5>Select Background Color</h5>
+
+                                <button class="btn btn-secondary" data-toggle="tooltip" data-placement="top" title="Tooltip on top" onclick="myFunction18()">Toggle dark mode</button>
+                                <button type="button" class="btn btn-secondary" data-toggle="tooltip" data-placement="top" title="Tooltip on top" onclick="myFunction5()">red</button>
+                                <button type="button" class="btn btn-secondary" data-toggle="tooltip" data-placement="top" title="Tooltip on top" onclick="myFunction6()">eye friendly</button>
+                                <button type="button" class="btn btn-secondary" data-toggle="tooltip" data-placement="top" title="Tooltip on top" onclick="myFunction7()">grey</button>
+                                <button type="button" class="btn btn-secondary" data-toggle="tooltip" data-placement="top" title="Tooltip on top" onclick="myFunction12()">green</button>
+                                <hr>
+                                <h5>Learn how to navigate</h5>
+                                <h5> <a href="Webpages/Help.html"> How text to speech works</a></h5>
+                                <br />
+                                <hr />
+                                <h5>Select Font Size</h5>
 
 
-                    <select onchange="myFunction10(this);" size="13">
-                        <option>Georgia</option>
-                        <option>Palatino Linotype</option>
-                        <option>Book Antiqua</option>
-                        <option>Times New Roman</option>
-                        <option>Arial</option>
-                        <option>Helvetica</option>
-                        <option>Arial Black</option>
-                        <option>Impact</option>
-                        <option>Lucida Sans Unicode</option>
-                        <option>Tahoma</option>
-                        <option>Verdana</option>
-                        <option>Courier New</option>
-                        <option>Lucida Console</option>
-                    </select>
-                </a>
+                                <button type="button" class="btn btn-secondary" data-toggle="tooltip" data-placement="top" title="Tooltip on top" onclick="myFunction4()">Smaller </button>
+                                <button type="button" class="btn btn-secondary" data-toggle="tooltip" data-placement="top" title="Tooltip on top" onclick="myFunction2()">Normal </button>
+                                <button type="button" class="btn btn-secondary" data-toggle="tooltip" data-placement="top" title="Tooltip on top" onclick="myFunction3()">Large </button>
+                                <hr>
+                                <h5>  Select Custom Font Size:</h5>
 
+                                <select onchange="myFunction(this);" size="12">
+                                    <option>xx-small</option>
+                                    <option>x-small</option>
+                                    <option>small</option>
+                                    <option>medium</option>
+                                    <option>large</option>
+                                    <option>x-large</option>
+                                    <option>xx-large</option>
+                                    <option>100%</option>
+                                    <option>250%</option>
+                                    <option>2cm</option>
+                                    <option>100px</option>
 
+                                </select>
+                                <hr>
+                                <h5> Select Font Family:</h5>
 
 
 
+                                <select onchange="myFunction10(this);" size="13">
+                                    <option>Georgia</option>
+                                    <option>Palatino Linotype</option>
+                                    <option>Book Antiqua</option>
+                                    <option>Times New Roman</option>
+                                    <option>Arial</option>
+                                    <option>Helvetica</option>
+                                    <option>Arial Black</option>
+                                    <option>Impact</option>
+                                    <option>Lucida Sans Unicode</option>
+                                    <option>Tahoma</option>
+                                    <option>Verdana</option>
+                                    <option>Courier New</option>
+                                    <option>Lucida Console</option>
+                                </select>
+                            </div>
 
+                            <div class="modal-footer">
+                                <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                                <button type="button" class="btn btn-primary">Save changes</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- Button trigger modal -->
+                <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#exampleModalCenter">
+                    Accessibility
+                </button>
+            </ul>
+            <form class="form-inline my-2 my-lg-0">
+                <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
+                <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
+            </form>
 
-
-
-
-
-
-            </div>
         </div>
 
-        <a href="javascript:void(0);" class="icon" onclick="myFunction14()">&#9776;</a>
-    </div>
+    </nav>
+
+
   
-
     <div class="grid-container" id="demo">
+
         <marquee direction="left">
-            WARNING! IF BROWSING VIA TABLET IT IS ADVICED TO HOLD IT IN LANDSCAPE MODE  FOR BEST BROWSING EXPERIENCE / SELECT TEXT WITH MOUSE OR TOUCH TO ACTIVATE THE TEXT TO SPEACH
+            SELECT TEXT WITH MOUSE OR TOUCH TO ACTIVATE THE TEXT TO SPEACH
         </marquee>
+        <!doctype html>
+        <html lang="en">
+        <head>
+            <meta charset="utf-8">
+            <meta name="viewport" content="width=device-width, initial-scale=1">
+            <meta name="description" content="">
+            <meta name="author" content="Mark Otto, Jacob Thornton, and Bootstrap contributors">
+            <meta name="generator" content="Hugo 0.88.1">
+            <title>Blog Template · Bootstrap v5.1</title>
 
+          
+
+
+
+        </head>
+
+
+
+
+        <main class="container">
         
-
-        <button onclick="listView()"><i class="fa fa-bars"></i> List View</button>
-        <button onclick="gridView()"><i class="fa fa-th-large"></i> Grid View</button>
-        <div class="row">
-
-            <div class="column">
-
-
-                <article>
-                    <h2>New Tablet from company</h2>
-                    <h5>Title description, Dec 7, 2022</h5>
-
-                    <img src="../Content/Ballmer-MSFT-tablet.jpg" alt="tablet-computer " class="responsive" width="500" />
-                    <h3>London is the capital city of England. It is the most populous city in the  United Kingdom, with a metropolitan area of over 13 million inhabitants.</h3>
-
-                    <p>Standing on the River Thames, London has been a major settlement for two millennia, its history going back to its founding by the Romans, who named it Londinium.</p>
-                    <p>London is the capital city of England. It is the most populous city in the  United Kingdom, with a metropolitan area of over 13 million inhabitants.</p>
-                    <p>
-                        Standing on the River Thames, London has been a major settlement for two millennia, its history going back to its founding by the Romans, who named it Londinium.
-                        London is the capital city of England. It is the most populous city in the  United Kingdom, with a metropolitan area of over 13 million inhabitants.
-                    </p>
-                    <p>
-                        Standing on the River Thames, London has been a major settlement for two millennia, its history going back to its founding by the Romans, who named it Londinium.
-                        London is the capital city of England. It is the most populous city in the  United Kingdom, with a metropolitan area of over 13 million inhabitants.
-                    </p>
-                    <p>
-                        Standing on the River Thames, London has been a major settlement for two millennia, its history going back to its founding by the Romans, who named it Londinium.
-                        London is the capital city of England. It is the most populous city in the  United Kingdom, with a metropolitan area of over 13 million inhabitants.
-                    </p>
-                    <h2>Popular Post</h2>
-                    <a href="Webpages/reviews.html">
-                        <img src="../Content/gorillapad-6.jpg" alt="tablet " class="responsive" style="height:230px; float:left;" />
-                    </a>
-                    <h3>London is the capital city of England. It is the most populous city in the  United Kingdom, with a metropolitan area of over 13 million inhabitants.</h3>
-                    <h4> Date:13/04/2022</h4>
-                    <p>Standing on the River Thames, London has been a major settlement for two millennia, its history going back to its founding by the Romans, who named it Londinium.</p>
-                    <br>
-                    <br>
-                    <br>
-                    <br>
-                    <br>
-                    <br>
-                    <br>
-                    <br>
-                    <br>
-                    <a href="Webpages/reviews.html">
-                        <img src="../Content/maxresdefault.jpg" alt="tablet " class="responsive" style="height:230px; float:left;" />
-                    </a>
-                    <h3>London is the capital city of England. It is the most populous city in the  United Kingdom, with a metropolitan area of over 13 million inhabitants.</h3>
-                    <h4> Date:13/04/2022</h4>
-                    <p>Standing on the River Thames, London has been a major settlement for two millennia, its history going back to its founding by the Romans, who named it Londinium.</p>
-                    <br>
-                    <br>
-                    <br>
-                    <br>
-                    <br>
-                    <br>
-                    <br>
-
-                    <a href="Webpages/reviews.html">
-                        <img src="../Content/4929.jpg" alt="tablet " class="responsive" style="height:230px; float:left;" />
-                    </a>
-                    <h3>London is the capital city of England. It is the most populous city in the  United Kingdom, with a metropolitan area of over 13 million inhabitants.</h3>
-                    <h4> Date:13/04/2022</h4>
-                    <p>Standing on the River Thames, London has been a major settlement for two millennia, its history going back to its founding by the Romans, who named it Londinium.</p>
-                    <br>
-                    <br>
-                    <br>
-                    <br>
-                    <br>
-                    <br>
-                </article>
-
-                <article>
-                    <h2>Pushing the limits of technology </h2>
-                    <h5>Title description, Dec 7, 2017</h5>
-                    <img src="../Content/it_photo_118213.jpg" class="responsive" width="500" />
-
-                    <p>Standing on the River Thames, London has been a major settlement for two millennia, its history going back to its founding by the Romans, who named it Londinium.</p>
-
-                    <p>London is the capital city of England. It is the most populous city in the  United Kingdom, with a metropolitan area of over 13 million inhabitants.</p>
-                    <p>London is the capital city of England. It is the most populous city in the  United Kingdom, with a metropolitan area of over 13 million inhabitants.</p>
-                    <p>London is the capital city of England. It is the most populous city in the  United Kingdom, with a metropolitan area of over 13 million inhabitants.</p>
-                    <p>London is the capital city of England. It is the most populous city in the  United Kingdom, with a metropolitan area of over 13 million inhabitants.</p>
-                    <p>London is the capital city of England. It is the most populous city in the  United Kingdom, with a metropolitan area of over 13 million inhabitants.</p>
-
-                </article>
-            </div>
-              <div class="column">
-                  <h2>The tablet reinvented</h2>
-                  <h5>Title description, Dec 7, 2022</h5>
-                  <img src="../Content/samsunggalaxytab10-1.jpg" alt="tablet-computer" class="responsive" width="400" />
-
-
-                  <p>London is the capital city of England. It is the most populous city in the  United Kingdom, with a metropolitan area of over 13 million inhabitants.</p>
-                  <p>Standing on the River Thames, London has been a major settlement for two millennia, its history going back to its founding by the Romans, who named it Londinium.</p>
-                  <p>London is the capital city of England. It is the most populous city in the  United Kingdom, with a metropolitan area of over 13 million inhabitants.</p>
-                  <p>Standing on the River Thames, London has been a major settlement for two millennia, its history going back to its founding by the Romans, who named it Londinium.</p>
-                  <p>London is the capital city of England. It is the most populous city in the  United Kingdom, with a metropolitan area of over 13 million inhabitants.</p>
-                  <p>Standing on the River Thames, London has been a major settlement for two millennia, its history going back to its founding by the Romans, who named it Londinium.</p>
-
-                  <p>London is the capital city of England. It is the most populous city in the  United Kingdom, with a metropolitan area of over 13 million inhabitants.</p>
-
-                  <article>
-                      <h2>New tablets</h2>
-                      <h5>Title description, Dec 7, 2017</h5>
-                      <img src="../Content/4b609ada0000000000e9147b.jpeg" alt="tablet-computer" aria-label="tablet picture" class="responsive" width="400" />
-                      <h3>London is the capital city of England. It is the most populous city in the  United Kingdom, with a metropolitan area of over 13 million inhabitants.</h3>
-                      <p>Standing on the River Thames, London has been a major settlement for two millennia, its history going back to its founding by the Romans, who named it Londinium.</p>
-                      <p>London is the capital city of England. It is the most populous city in the  United Kingdom, with a metropolitan area of over 13 million inhabitants.</p>
-                      <p>Standing on the River Thames, London has been a major settlement for two millennia, its history going back to its founding by the Romans, who named it Londinium.</p>
-                      <p>London is the capital city of England. It is the most populous city in the  United Kingdom, with a metropolitan area of over 13 million inhabitants.</p>
-                      <p>Standing on the River Thames, London has been a major settlement for two millennia, its history going back to its founding by the Romans, who named it Londinium.</p>
-
-                      <p>London is the capital city of England. It is the most populous city in the  United Kingdom, with a metropolitan area of over 13 million inhabitants.</p>
-                  </article>
-
-                  <article>
-                      <h2>New Consoles</h2>
-                      <h5>Title description, Dec 7, 2017</h5>
-                      <img src="../Content/λήψη.jpeg" class="responsive" width="400" />
-                      <p>London is the capital city of England. It is the most populous city in the  United Kingdom, with a metropolitan area of over 13 million inhabitants.</p>
-                      <p>Standing on the River Thames, London has been a major settlement for two millennia, its history going back to its founding by the Romans, who named it Londinium.</p>
-                      <p>London is the capital city of England. It is the most populous city in the  United Kingdom, with a metropolitan area of over 13 million inhabitants.</p>
-                      <p>Standing on the River Thames, London has been a major settlement for two millennia, its history going back to its founding by the Romans, who named it Londinium.</p>
-                      <p>London is the capital city of England. It is the most populous city in the  United Kingdom, with a metropolitan area of over 13 million inhabitants.</p>
-                      <p>Standing on the River Thames, London has been a major settlement for two millennia, its history going back to its founding by the Romans, who named it Londinium.</p>
-
-                      <p>London is the capital city of England. It is the most populous city in the  United Kingdom, with a metropolitan area of over 13 million inhabitants.</p>
-                  </article>
-            
-
-                  <article>
-                      <h1>News</h1>
-
-                      <img src="../Content/htc-2.jpg" alt="tablet " class="responsive" style="height:100px; float:left;" />
-                      <p>London is the capital city of England. It is the most populous city in the  United Kingdom, with a metropolitan area of over 13 million inhabitants.</p>
-                      <br>
-                      <br>
-                      <br>
-                      <br>
-                      <br>
-                      <img src="../Content/4679839422_0b2f4d5a53_b.jpg" alt="smartphone " class="responsive" style="height:100px; float:left;" />
-                      <p>London is the capital city of England. It is the most populous city in the  United Kingdom, with a metropolitan area of over 13 million inhabitants.</p>
-                      <br>
-                      <br>
-                      <br>
-                      <br>
-                      <img src="../Content/4b609ada0000000000e9147b.jpeg" alt="tablet " class="responsive" style="height:100px; float:left;" />
-                      <p>London is the capital city of England. It is the most populous city in the  United Kingdom, with a metropolitan area of over 13 million inhabitants.</p>
-                      <br>
-                      <br>
-                  </article>
-
-                  <article>
-                      <h1>News</h1>
-
-                      <img src="../Content/htc-2.jpg" alt="tablet " class="responsive" style="height:100px; float:left;" />
-                      <p>London is the capital city of England. It is the most populous city in the  United Kingdom, with a metropolitan area of over 13 million inhabitants.</p>
-                      <br>
-                      <br>
-                      <br>
-                      <br>
-                      <br>
-                      <img src="../Content/4679839422_0b2f4d5a53_b.jpg" alt="smartphone " class="responsive" style="height:100px; float:left;" />
-                      <p>London is the capital city of England. It is the most populous city in the  United Kingdom, with a metropolitan area of over 13 million inhabitants.</p>
-                      <br>
-                      <br>
-                      <br>
-                      <br>
-                      <img src="../Content/4b609ada0000000000e9147b.jpeg" alt="tablet " class="responsive" style="height:100px; float:left;" />
-                      <p>London is the capital city of England. It is the most populous city in the  United Kingdom, with a metropolitan area of over 13 million inhabitants.</p>
-
-                  </article>
-              </div>
-
-          </div>
-            <div class="row">
-
-                <div class="column">
-
-
-                    <article>
-                        <h1>News</h1>
-
-                        <img src="../Content/htc-2.jpg" alt="tablet " class="responsive" style="height:100px; float:left;" />
-                        <p>London is the capital city of England. It is the most populous city in the  United Kingdom, with a metropolitan area of over 13 million inhabitants.</p>
-                        <br>
-                        <br>
-                        <br>
-                        <br>
-                        <br>
-                        <img src="../Content/4679839422_0b2f4d5a53_b.jpg" alt="smartphone " class="responsive" style="height:100px; float:left;" />
-                        <p>London is the capital city of England. It is the most populous city in the  United Kingdom, with a metropolitan area of over 13 million inhabitants.</p>
-                        <br>
-                        <br>
-                        <br>
-                        <br>
-                        <img src="../Content/4b609ada0000000000e9147b.jpeg" alt="tablet " class="responsive" style="height:100px; float:left;" />
-                        <p>London is the capital city of England. It is the most populous city in the  United Kingdom, with a metropolitan area of over 13 million inhabitants.</p>
-
-                    </article>
+            <div class="card-deck">
+                <div class="card">
+                    <img class="card-img-top" src="..." alt="Card image cap">
+                    <div class="card-body">
+                        <h5 class="card-title">Card title</h5>
+                        <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+                    </div>
+                    <div class="card-footer">
+                        <small class="text-muted">Last updated 3 mins ago</small>
+                    </div>
                 </div>
-                <div class="column">
+                <div class="card">
+                    <img class="card-img-top" src="..." alt="Card image cap">
+                    <div class="card-body">
+                        <h5 class="card-title">Card title</h5>
+                        <p class="card-text">This card has supporting text below as a natural lead-in to additional content.</p>
+                    </div>
+                    <div class="card-footer">
+                        <small class="text-muted">Last updated 3 mins ago</small>
+                    </div>
+                </div>
+                <div class="card">
+                    <img class="card-img-top" src="..." alt="Card image cap">
+                    <div class="card-body">
+                        <h5 class="card-title">Card title</h5>
+                        <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This card has even longer content than the first to show that equal height action.</p>
+                    </div>
+                    <div class="card-footer">
+                        <small class="text-muted">Last updated 3 mins ago</small>
 
-                    <article>
-                        <h1> Popular technology</h1>
-                        <img src="../Content/Samsung_Galaxy_Tab_3_10.1-inch_Android_Tablet.jpg" alt="tablet " class="responsive" style="height:100px; float:left;" />
-                        <p>London is the capital city of England. It is the most populous city in the  United Kingdom, with a metropolitan area of over 13 million inhabitants.</p>
-                        <br>
-                        <br>
-                        <br>
-                        <br>
-                        <br>
-                        <img src="../Content/htc-2.jpg" alt="smartphone " class="responsive" style="height:100px; float:left;" />
-                        <p>London is the capital city of England. It is the most populous city in the  United Kingdom, with a metropolitan area of over 13 million inhabitants.</p>
-                        <br>
-                        <br>
-                        <br>
-                        <br>
-                        <img src="../Content/4929.jpg" alt="tablet " class="responsive" style="height:100px; float:left;" />
-                        <p>London is the capital city of England. It is the most populous city in the  United Kingdom, with a metropolitan area of over 13 million inhabitants.</p>
-                        <br>
-                        <br>
-                        <br>
-                        <br>
+                    </div>
+                </div>
+            </div>  <br />
+            <div class="row g-5">
+                <div class="col-md-8">
+                    <h3 class="pb-4 mb-4 fst-italic border-bottom">
+                        From the Firehose
+                    </h3>
+
+                    <article class="blog-post">
+                        <h2 class="blog-post-title">Sample blog post</h2>
+                        <p class="blog-post-meta">January 1, 2021 by <a href="#">Mark</a></p>
+
+                        <p>This blog post shows a few different types of content that’s supported and styled with Bootstrap. Basic typography, lists, tables, images, code, and more are all supported as expected.</p>
+                        <hr>
+                        <p>This is some additional paragraph placeholder content. It has been written to fill the available space and show how a longer snippet of text affects the surrounding content. We'll repeat it often to keep the demonstration flowing, so be on the lookout for this exact same string of text.</p>
+                        <ul class="list-unstyled">
+                            <li class="media">
+                                <img class="mr-3" src="..." alt="Generic placeholder image">
+                                <div class="media-body">
+                                    <h5 class="mt-0 mb-1">List-based media object</h5>
+                                    Cras sit amet nibh libero, in gravida nulla. Nulla vel metus scelerisque ante sollicitudin. Cras purus odio, vestibulum in vulputate at, tempus viverra turpis. Fusce condimentum nunc ac nisi vulputate fringilla. Donec lacinia congue felis in faucibus.
+                                </div>
+                            </li>
+                            <li class="media my-4">
+                                <img class="mr-3" src="..." alt="Generic placeholder image">
+                                <div class="media-body">
+                                    <h5 class="mt-0 mb-1">List-based media object</h5>
+                                    Cras sit amet nibh libero, in gravida nulla. Nulla vel metus scelerisque ante sollicitudin. Cras purus odio, vestibulum in vulputate at, tempus viverra turpis. Fusce condimentum nunc ac nisi vulputate fringilla. Donec lacinia congue felis in faucibus.
+                                </div>
+                            </li>
+                            <li class="media">
+                                <img class="mr-3" src="..." alt="Generic placeholder image">
+                                <div class="media-body">
+                                    <h5 class="mt-0 mb-1">List-based media object</h5>
+                                    Cras sit amet nibh libero, in gravida nulla. Nulla vel metus scelerisque ante sollicitudin. Cras purus odio, vestibulum in vulputate at, tempus viverra turpis. Fusce condimentum nunc ac nisi vulputate fringilla. Donec lacinia congue felis in faucibus.
+                                </div>
+                            </li>
+                        </ul>
+                        <ul class="list-unstyled">
+                            <li class="media">
+                                <img class="mr-3" src="..." alt="Generic placeholder image">
+                                <div class="media-body">
+                                    <h5 class="mt-0 mb-1">List-based media object</h5>
+                                    Cras sit amet nibh libero, in gravida nulla. Nulla vel metus scelerisque ante sollicitudin. Cras purus odio, vestibulum in vulputate at, tempus viverra turpis. Fusce condimentum nunc ac nisi vulputate fringilla. Donec lacinia congue felis in faucibus.
+                                </div>
+                            </li>
+                            <li class="media my-4">
+                                <img class="mr-3" src="..." alt="Generic placeholder image">
+                                <div class="media-body">
+                                    <h5 class="mt-0 mb-1">List-based media object</h5>
+                                    Cras sit amet nibh libero, in gravida nulla. Nulla vel metus scelerisque ante sollicitudin. Cras purus odio, vestibulum in vulputate at, tempus viverra turpis. Fusce condimentum nunc ac nisi vulputate fringilla. Donec lacinia congue felis in faucibus.
+                                </div>
+                            </li>
+                            <li class="media">
+                                <img class="mr-3" src="..." alt="Generic placeholder image">
+                                <div class="media-body">
+                                    <h5 class="mt-0 mb-1">List-based media object</h5>
+                                    Cras sit amet nibh libero, in gravida nulla. Nulla vel metus scelerisque ante sollicitudin. Cras purus odio, vestibulum in vulputate at, tempus viverra turpis. Fusce condimentum nunc ac nisi vulputate fringilla. Donec lacinia congue felis in faucibus.
+                                </div>
+                            </li>
+                        </ul>
+                        <ul class="list-unstyled">
+                            <li class="media">
+                                <img class="mr-3" src="..." alt="Generic placeholder image">
+                                <div class="media-body">
+                                    <h5 class="mt-0 mb-1">List-based media object</h5>
+                                    Cras sit amet nibh libero, in gravida nulla. Nulla vel metus scelerisque ante sollicitudin. Cras purus odio, vestibulum in vulputate at, tempus viverra turpis. Fusce condimentum nunc ac nisi vulputate fringilla. Donec lacinia congue felis in faucibus.
+                                </div>
+                            </li>
+                            <li class="media my-4">
+                                <img class="mr-3" src="..." alt="Generic placeholder image">
+                                <div class="media-body">
+                                    <h5 class="mt-0 mb-1">List-based media object</h5>
+                                    Cras sit amet nibh libero, in gravida nulla. Nulla vel metus scelerisque ante sollicitudin. Cras purus odio, vestibulum in vulputate at, tempus viverra turpis. Fusce condimentum nunc ac nisi vulputate fringilla. Donec lacinia congue felis in faucibus.
+                                </div>
+                            </li>
+                            <li class="media">
+                                <img class="mr-3" src="..." alt="Generic placeholder image">
+                                <div class="media-body">
+                                    <h5 class="mt-0 mb-1">List-based media object</h5>
+                                    Cras sit amet nibh libero, in gravida nulla. Nulla vel metus scelerisque ante sollicitudin. Cras purus odio, vestibulum in vulputate at, tempus viverra turpis. Fusce condimentum nunc ac nisi vulputate fringilla. Donec lacinia congue felis in faucibus.
+                                </div>
+                            </li>
+                        </ul>
+                        <h2>Inline HTML elements</h2>
+                        <p>HTML defines a long list of available inline tags, a complete list of which can be found on the <a href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element">Mozilla Developer Network</a>.</p>
+                        <ul>
+                            <li><strong>To bold text</strong>, use <code class="language-plaintext highlighter-rouge">&lt;strong&gt;</code>.</li>
+                            <li><em>To italicize text</em>, use <code class="language-plaintext highlighter-rouge">&lt;em&gt;</code>.</li>
+                            <li>Abbreviations, like <abbr title="HyperText Markup Langage">HTML</abbr> should use <code class="language-plaintext highlighter-rouge">&lt;abbr&gt;</code>, with an optional <code class="language-plaintext highlighter-rouge">title</code> attribute for the full phrase.</li>
+                            <li>Citations, like <cite>— Mark Otto</cite>, should use <code class="language-plaintext highlighter-rouge">&lt;cite&gt;</code>.</li>
+                            <li><del>Deleted</del> text should use <code class="language-plaintext highlighter-rouge">&lt;del&gt;</code> and <ins>inserted</ins> text should use <code class="language-plaintext highlighter-rouge">&lt;ins&gt;</code>.</li>
+                            <li>Superscript <sup>text</sup> uses <code class="language-plaintext highlighter-rouge">&lt;sup&gt;</code> and subscript <sub>text</sub> uses <code class="language-plaintext highlighter-rouge">&lt;sub&gt;</code>.</li>
+                        </ul>
+                        <p>Most of these elements are styled by browsers with few modifications on our part.</p>
+                        <h2>Heading</h2>
+                        <p>This is some additional paragraph placeholder content. It has been written to fill the available space and show how a longer snippet of text affects the surrounding content. We'll repeat it often to keep the demonstration flowing, so be on the lookout for this exact same string of text.</p>
+                        <h3>Sub-heading</h3>
+                        <p>This is some additional paragraph placeholder content. It has been written to fill the available space and show how a longer snippet of text affects the surrounding content. We'll repeat it often to keep the demonstration flowing, so be on the lookout for this exact same string of text.</p>
+                        <pre><code>Example code block</code></pre>
+                        <p>This is some additional paragraph placeholder content. It's a slightly shorter version of the other highly repetitive body text used throughout.</p>
                     </article>
+
+                    <article class="blog-post">
+                        <h2 class="blog-post-title">Another blog post</h2>
+                        <p class="blog-post-meta">December 23, 2020 by <a href="#">Jacob</a></p>
+
+                        <p>This is some additional paragraph placeholder content. It has been written to fill the available space and show how a longer snippet of text affects the surrounding content. We'll repeat it often to keep the demonstration flowing, so be on the lookout for this exact same string of text.</p>
+                        <blockquote>
+                            <p>Longer quote goes here, maybe with some <strong>emphasized text</strong> in the middle of it.</p>
+                        </blockquote>
+                        <p>This is some additional paragraph placeholder content. It has been written to fill the available space and show how a longer snippet of text affects the surrounding content. We'll repeat it often to keep the demonstration flowing, so be on the lookout for this exact same string of text.</p>
+                        <h3>Example table</h3>
+                        <p>And don't forget about tables in these posts:</p>
+                        <table class="table">
+                            <thead>
+                                <tr>
+                                    <th>Name</th>
+                                    <th>Upvotes</th>
+                                    <th>Downvotes</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>Alice</td>
+                                    <td>10</td>
+                                    <td>11</td>
+                                </tr>
+                                <tr>
+                                    <td>Bob</td>
+                                    <td>4</td>
+                                    <td>3</td>
+                                </tr>
+                                <tr>
+                                    <td>Charlie</td>
+                                    <td>7</td>
+                                    <td>9</td>
+                                </tr>
+                            </tbody>
+                            <tfoot>
+                                <tr>
+                                    <td>Totals</td>
+                                    <td>21</td>
+                                    <td>23</td>
+                                </tr>
+                            </tfoot>
+                        </table>
+
+                        <p>This is some additional paragraph placeholder content. It's a slightly shorter version of the other highly repetitive body text used throughout.</p>
+                    </article>
+
+                    <article class="blog-post">
+                        <h2 class="blog-post-title">New feature</h2>
+                        <p class="blog-post-meta">December 14, 2020 by <a href="#">Chris</a></p>
+
+                        <p>This is some additional paragraph placeholder content. It has been written to fill the available space and show how a longer snippet of text affects the surrounding content. We'll repeat it often to keep the demonstration flowing, so be on the lookout for this exact same string of text.</p>
+                        <ul>
+                            <li>First list item</li>
+                            <li>Second list item with a longer description</li>
+                            <li>Third list item to close it out</li>
+                        </ul>
+                        <p>This is some additional paragraph placeholder content. It's a slightly shorter version of the other highly repetitive body text used throughout.</p>
+                    </article>
+
+                    <nav class="blog-pagination" aria-label="Pagination">
+                        <a class="btn btn-outline-primary" href="#">Older</a>
+                        <a class="btn btn-outline-secondary disabled">Newer</a>
+                    </nav>
+
+                </div>
+
+                <div class="col-md-4">
+                    <div class="position-sticky" style="top: 2rem;">
+                        <div class="p-4 mb-3 bg-light rounded">
+                            <h4 class="fst-italic">About</h4>
+                            <p class="mb-0">Customize this section to tell your visitors a little bit about your publication, writers, content, or something else entirely. Totally up to you.</p>
+                        </div>
+                        <div class="p-4">
+                            <h4 class="fst-italic">Archives</h4>
+                            <ol class="list-unstyled mb-0">
+                                <li><a href="http://localhost:52652/Webpages/reviews.html#:~:text=text%20used%20throughout.-,New%20feature,-December%2014%2C%202020">TV & Audio</a></li>
+                                <li><a href="#">Smartphones</a></li>
+                                <li><a href="#">Tablets & PC</a></li>
+                                <li><a href="#">Videogames</a></li>
+                        
+                            </ol>
+                        </div>
+
+
+                        <div class="p-4">
+                            <h4 class="fst-italic">Elsewhere</h4>
+                            <ol class="list-unstyled">
+                                <li><a href="#">GitHub</a></li>
+                                <li><a href="#">Twitter</a></li>
+                                <li><a href="#">Facebook</a></li>
+                            </ol>
+                        </div>
+                    </div>
                 </div>
             </div>
 
+        </main>
 
-            <button onclick="topFunction()" id="myBtn" title="Go to top">Top</button>
-        </div>
-        <div class="footer">
-
-
-
-            <h1> Bolton University New York College</h1>
-            <h2>Copyright 2022 "Technological Reviews"  </h2>
-            <h3>Created by konstantinos Moraitis</h3>
-            <h3><a href="Webpages/Help.html">Accessibility statement</a></h3>
-        </div>
-
+        <footer class="blog-footer">
+            <p>"Technological Reviews" Created by Konstantinos Moraitis.</p>
+            <p>
+                <a href="#">Back to top</a>
+            </p>
+        </footer>
 
         <script src="https://code.responsivevoice.org/responsivevoice.js?key=lL2tzw3J"></script>
 
 
 </body>
-
 </html>
-

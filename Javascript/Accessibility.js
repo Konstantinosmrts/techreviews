@@ -134,3 +134,5 @@ function myFunction18() {
 $('#myModal').on('shown.bs.modal', function () {
     $('#myInput').trigger('focus')
 })
+
+
