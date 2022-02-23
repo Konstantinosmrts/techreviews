@@ -7,9 +7,9 @@
 }
 
 .navbar a:hover{
-    font-weight:bold;
+    background-color:coral;
     overflow:hidden;
-    margin:auto;
+
 
 }
 .responsive {
