@@ -4,19 +4,8 @@ var elements = document.getElementsByClassName("column");
 // Declare a loop variable
 var i;
 
-// List View
-function listView() {
-    for (i = 0; i < elements.length; i++) {
-        elements[i].style.width = "100%";
-    }
-}
 
-// Grid View
-function gridView() {
-    for (i = 0; i < elements.length; i++) {
-        elements[i].style.width = "50%";
-    }
-}
+
 
 function filterFunction() {
     var input, filter, ul, li, a, i;
@@ -45,3 +34,7 @@ window.onload = function () {
         PopUp('show');
     }, 800);
 }
+var dropdownElementList = [].slice.call(document.querySelectorAll('.dropdown-toggle'))
+var dropdownList = dropdownElementList.map(function (dropdownToggleEl) {
+    return new bootstrap.Dropdown(dropdownToggleEl)
+})

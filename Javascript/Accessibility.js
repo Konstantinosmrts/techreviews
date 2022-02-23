@@ -52,23 +52,27 @@ document.getElementsByTagName('div')[0].focus();
 
         function myFunction5() {
             document.body.style.backgroundColor = "red";
+            element.classList.toggle
         }
    
  
         function myFunction12() {
             document.body.style.backgroundColor = "green";
+            element.classList.toggle
         }
   
 
         function myFunction6() {
             document.body.style.backgroundColor = "wheat";
+            element.classList.toggle
         }
    
 
    
         function myFunction7() {
 
-            document.body.style.backgroundColor = "grey";
+            var element = document.body;
+            element.classList.toggle("grey");
 
 
 
