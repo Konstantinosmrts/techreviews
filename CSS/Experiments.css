@@ -7,11 +7,9 @@
 }
 
 .navbar a:hover{
-    border:solid;
-    border-color:red;
+  font-weight:bold;
     border-radius:3px;
     overflow:hidden;
-
     color:black;
 
 
@@ -25,6 +23,16 @@ header{
     font-weight:bold;
     
 }
+.scrolled-down {
+    transform: translateY(-100%);
+    transition: all 0.3s ease-in-out;
+}
+
+.scrolled-up {
+    transform: translateY(0);
+    transition: all 0.3s ease-in-out;
+}
+
 
     .responsive {
         max-width: 100%;
