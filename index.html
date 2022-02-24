@@ -78,7 +78,7 @@
                             </ul>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="../Webpages/contact.html">Contact</a>
+                            <a class="nav-link" href="../Webpages/About.html">About</a>
                         </li>
                         <li class="nav-item">
                             <a class="nav-link" href="../Webpages/Help.html">Help</a>
@@ -128,11 +128,13 @@
             </div>
             <div class="row">
                 <div class="container-fluid col-sm-7 py-1">
+                    <h1> Top Stories</h1>
+                    <hr />
                     <img class="responsive" src="Content/4929.jpg" width="1100" style="padding:15px; " />
 
 
                     <a href="Webpages/reviewstablet.html#A5"   <h1 class="display-6 fw-bold">New Announcements</h1>
-                <p class="col-auto fs-5">Click here for more information</p>
+                <p class="col-auto fs-5 ">Click this button to see the full review</p>
                 </a>
                     <p>Using a series of utilities, you can create this jumbotron, just like the one in previous versions of Bootstrap. Check out the examples below for how you can remix and restyle it to your liking.</p>
                     <p>
@@ -141,11 +143,6 @@
                     </p>
 
 
-
-                    <h3 class="pb-4 mb-4 fst-italic border-bottom">
-                        From the Firehose
-                    </h3>
-
                     <article class="blog-post">
                         <h2 class="blog-post-title">Sample blog post</h2>
                         <p class="blog-post-meta">January 1, 2021 by <a href="#">Mark</a></p>
@@ -212,6 +209,8 @@
                                 <small class="text-muted">Donec id elit non mi porta.</small>
                             </a>
                     </article>
+                    <h2>More Topics</h2>
+                    <hr />
                     <div class="media">
                         <div class="media-top">
 
@@ -254,8 +253,9 @@
 
 
 
-
                 <div class="container-fluid col-sm-4 py-1 ">
+                    <h1>Interesting Topics</h1>
+                    <hr />
                     <div class="media">
                         <div class="media-top">
 
@@ -392,22 +392,6 @@
 
 
 
-
-
-
-    </main>
-    </div>
-
-
-
-
-
-
-
-
-
-    <script src="https://code.responsivevoice.org/responsivevoice.js?key=lL2tzw3J"></script>
-
     <!-- Modal -->
     <div class="modal fade" id="exampleModalCenter" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
         <div class="modal-dialog modal-dialog-centered" role="document">
@@ -484,6 +468,26 @@
             </div>
         </div>
     </div>
+
+
+    <script src="https://code.responsivevoice.org/responsivevoice.js?key=lL2tzw3J"></script>
+
+    <script>
+        setTimeout(responsiveVoice.speak("Welcome to the Technological Reviews website you can select text using computer mouse or fingers if you have a touchscreen device to hear the text displayed"), 50);
+    </script>
+
+
+    <script>
+        $(document).on('mouseleave', exitIntent);
+        function exitIntent(e) {
+            if (e.clientY < 0) {
+                responsiveVoice.cancel();
+                (responsiveVoice.speak('Your cursor is on the search bar are you sure you want to exit ?', 'UK English Male'), 50);
+            }
+        }
+    </script>
+
+
 
 </body>
 </html>
