@@ -51,29 +51,28 @@ document.getElementsByTagName('div')[0].focus();
 
 
         function myFunction5() {
-            document.body.style.backgroundColor = "red";
-            element.classList.toggle
+            document.body.style.backgroundColor = "coral";
+           
         }
    
  
         function myFunction12() {
-            document.body.style.backgroundColor = "green";
-            element.classList.toggle
+            document.body.style.backgroundColor = "lightgreen";
+           
         }
   
 
         function myFunction6() {
-            document.body.style.backgroundColor = "wheat";
-            element.classList.toggle
+            document.body.style.backgroundColor = "lightyellow";
+         
         }
    
 
    
         function myFunction7() {
 
-            var element = document.body;
-            element.classList.toggle("grey");
-
+            document.body.style.backgroundColor = "lightgrey";
+         
 
 
         }

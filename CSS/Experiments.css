@@ -18,7 +18,7 @@ header{
     overflow:hidden;
     padding:5px;
     text-align:center;
-    background:black;
+    background-color:black;
     color:white;
     font-weight:bold;
     
@@ -35,6 +35,7 @@ header{
 a:link {
     text-decoration: underline;
     text-underline-offset:unset;
+  
 }
 a:hover {
     font-weight: bold;
