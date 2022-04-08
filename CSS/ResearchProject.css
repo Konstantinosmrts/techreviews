@@ -142,6 +142,7 @@ body {
 marquee {
     background-image: linear-gradient(whitesmoke,white,skyblue);
     color: black;
+
     width: 100%;
     font-weight: bold;
     font-size: xx-large;
@@ -206,12 +207,14 @@ header {
 dropdown{
     float:none;
     overflow:hidden;
+    border:ridge;
+
 }
 
     /* Style the dropdown button to fit inside the topnav */
 .dropdown .dropbtn {
     cursor: pointer;
-    font-size: large;
+    font-size:large;
     border: ridge;
     outline: none;
     border-radius: 8px;
